@@ -1,0 +1,39 @@
+07/11 22:07:39.980 DEBUG|              test:0356| Starting before_iteration_hooks for logging_AsanCrash
+07/11 22:07:40.167 DEBUG|      base_sysinfo:0180| Loggable runs cmd: /opt/google/chrome/chrome --version
+07/11 22:07:43.675 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/interrupts.before
+07/11 22:07:43.758 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/schedstat.before
+07/11 22:07:43.816 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/meminfo.before
+07/11 22:07:43.918 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/slabinfo.before
+07/11 22:07:44.654 INFO |      base_sysinfo:0405| ChromeOS BOARD = amd64-generic_VM
+07/11 22:07:44.794 DEBUG|             utils:0219| Running 'logger "autotest starting iteration /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1 on amd64-generic_VM"'
+07/11 22:07:46.181 DEBUG|              test:0361| before_iteration_hooks completed
+07/11 22:07:46.262 DEBUG|              test:0376| starting test(run_once()), test details follow
+args: ()
+kwargs: {}
+07/11 22:07:46.334 DEBUG|              test:0387| Test failed due to Current image not built with ASAN. Exception log follows the after_iteration_hooks.
+07/11 22:07:46.380 DEBUG|              test:0392| Starting after_iteration_hooks for logging_AsanCrash
+07/11 22:07:46.534 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/interrupts.after
+07/11 22:07:46.625 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/meminfo.after
+07/11 22:07:46.793 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/slabinfo.after
+07/11 22:07:46.847 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/var/spool'
+07/11 22:07:48.112 DEBUG|             utils:0219| Running 'rsync --no-perms --chmod=ugo+r -a --safe-links --exclude=/crash/**autoserv* --exclude=/crash/**.journal --exclude=/crash/*.core /var/spool/crash /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/var/spool'
+07/11 22:07:50.052 DEBUG|             utils:0219| Running 'rm -rf /var/spool/crash/*'
+07/11 22:07:51.486 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1/schedstat.after
+07/11 22:07:51.544 DEBUG|             utils:0219| Running 'logger "autotest finished iteration /usr/local/autotest/results/default/logging_AsanCrash/sysinfo/iteration.1"'
+07/11 22:07:52.574 DEBUG|              test:0397| after_iteration_hooks completed
+07/11 22:07:52.629 WARNI|              test:0612| The test failed with the following exception
+Traceback (most recent call last):
+  File "/usr/local/autotest/common_lib/test.py", line 606, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 751, in _call_test_function
+    return func(*args, **dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 470, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 377, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/usr/local/autotest/tests/logging_AsanCrash/logging_AsanCrash.py", line 22, in run_once
+    raise error.TestFail('Current image not built with ASAN')
+TestFail: Current image not built with ASAN
+07/11 22:07:53.239 DEBUG|              test:0617| Running cleanup for test.
+07/11 22:07:53.339 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/11 22:07:53.578 DEBUG|   logging_manager:0634| Logging subprocess finished

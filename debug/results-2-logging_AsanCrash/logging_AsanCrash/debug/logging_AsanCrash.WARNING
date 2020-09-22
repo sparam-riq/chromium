@@ -1,0 +1,13 @@
+07/11 22:07:52.629 WARNI|              test:0612| The test failed with the following exception
+Traceback (most recent call last):
+  File "/usr/local/autotest/common_lib/test.py", line 606, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 751, in _call_test_function
+    return func(*args, **dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 470, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/usr/local/autotest/common_lib/test.py", line 377, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/usr/local/autotest/tests/logging_AsanCrash/logging_AsanCrash.py", line 22, in run_once
+    raise error.TestFail('Current image not built with ASAN')
+TestFail: Current image not built with ASAN

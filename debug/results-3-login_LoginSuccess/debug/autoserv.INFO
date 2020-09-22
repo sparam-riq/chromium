@@ -1,0 +1,67 @@
+07/12 05:10:16.078 INFO |          autoserv:0744| Results placed in /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess
+07/12 05:10:16.078 INFO |           pidfile:0016| Logged pid 1164 to /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/.autoserv_execute
+07/12 05:10:16.105 INFO |    connectionpool:0207| Starting new HTTP connection (1): metadata.google.internal
+07/12 05:10:16.107 INFO |            config:0022| Configuration file does not exist, ignoring: /etc/chrome-infra/ts-mon.json
+07/12 05:10:16.107 INFO |            config:0239| ts_mon monitoring has been explicitly disabled
+07/12 05:10:16.107 NOTIC|      cros_logging:0070| ts_mon was set up.
+07/12 05:10:16.121 INFO |        server_job:0732| I am PID 1164
+07/12 05:10:16.214 INFO |     ssh_multiplex:0095| Starting master ssh connection '/usr/bin/ssh -a -x -N -o ControlMaster=yes -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -o Protocol=2 -l root -p 9222 localhost'
+07/12 05:10:20.389 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:10:28.146 INFO | get_network_stats:0040| get_network_stats: no default interface
+07/12 05:10:28.147 WARNI|        server_job:0803| Not checking if job_repo_url contains autotest packages on ['localhost:9222']
+07/12 05:10:28.147 INFO |        server_job:0833| Processing control file
+07/12 05:10:29.060 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:10:35.112 INFO |        server_job:0222| INFO	----	----	kernel=4.14.187-15968-g08a7c30a896d	localtime=Jul 12 05:10:35	timestamp=1594530635	
+07/12 05:10:36.147 INFO |          autotest:0339| Installing autotest on localhost
+07/12 05:10:38.158 INFO |          autotest:0344| Using installation dir /usr/local/autotest
+07/12 05:10:55.744 INFO |          autotest:0382| Installation of autotest completed from /build/amd64-generic/usr/local/build/autotest/client/
+07/12 05:10:55.745 INFO |          autotest:0410| Installing updated global_config.ini.
+07/12 05:11:29.931 INFO |          autotest:1038| Executing /usr/local/autotest/bin/autotest /usr/local/autotest/control phase 0
+07/12 05:11:43.721 INFO |          autotest:1405| Entered autotestd_monitor.
+07/12 05:11:43.721 INFO |          autotest:1405| Finished launching tail subprocesses.
+07/12 05:11:43.722 INFO |          autotest:1405| Finished waiting on autotestd to start.
+07/12 05:12:30.564 INFO |        server_job:0222| START	----	----	timestamp=1594530749	localtime=Jul 12 05:12:29	
+07/12 05:12:35.450 INFO |        server_job:0222| 	START	login_LoginSuccess	login_LoginSuccess	timestamp=1594530754	localtime=Jul 12 05:12:34	
+07/12 05:12:41.302 INFO |          autotest:1443| Bundling /build/amd64-generic/usr/local/build/autotest/client/site_tests/login_LoginSuccess into test-login_LoginSuccess.tar.bz2
+07/12 05:25:47.691 INFO |        server_job:0222| 		GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531546	localtime=Jul 12 05:25:46	completed successfully
+07/12 05:25:48.378 INFO |        server_job:0222| 	END GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531547	localtime=Jul 12 05:25:47	
+07/12 05:26:21.952 INFO |        server_job:0222| END GOOD	----	----	timestamp=1594531581	localtime=Jul 12 05:26:21	
+07/12 05:26:28.296 INFO |          autotest:1405| Got lock of exit_code_file.
+07/12 05:26:28.382 INFO |          autotest:1405| Released lock of exit_code_file and closed it.
+07/12 05:26:28.402 INFO |          autotest:1405| Killing child processes.
+07/12 05:26:29.126 INFO |          autotest:1124| Client complete
+07/12 05:26:44.751 INFO |        server_job:0838| Finished processing control file
+07/12 05:26:44.751 INFO |        server_job:0899| No client dir to retrieve.
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: {'drone': 'chromebuild', 'user': 'autotest_system', 'job_started': 1594530616, 'hostname': 'localhost:9222', 'status_version': 1, 'experimental': 'False', 'label': 'ad_hoc_build/ad_hoc_suite/login_LoginSuccess'}
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: MACHINE NAME: localhost:9222
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: MACHINE GROUP: amd64-generic
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: parsing partial test ---- SERVER_JOB
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test None CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.754 ERROR|   logging_manager:0633| CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| 
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| 
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: update RUNNING reason: completed successfully
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: parsing test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.756 ERROR|   logging_manager:0633| completed successfully
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: parsing test None CLIENT_JOB.0
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: None
+07/12 05:26:44.757 ERROR|   logging_manager:0633| Testname: CLIENT_JOB.0
+07/12 05:26:44.757 ERROR|   logging_manager:0633| 
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: parsing test ---- SERVER_JOB
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:45.857 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:27:10.841 INFO | site_crashcollect:0221| There are no orphaned crashes; deleting /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/crashinfo.localhost
+07/12 05:27:11.626 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:27:15.340 INFO | get_network_stats:0040| get_network_stats: no default interface

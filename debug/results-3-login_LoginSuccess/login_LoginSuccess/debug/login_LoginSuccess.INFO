@@ -1,0 +1,65 @@
+07/11 22:14:25.710 INFO |      base_sysinfo:0405| ChromeOS BOARD = amd64-generic_VM
+07/11 22:14:50.083 INFO |    browser_finder:0138| Chose browser: PossibleCrOSBrowser(browser_type=system)
+07/11 22:14:51.227 INFO |    cros_interface:0744| (Re)starting the ui (logs the user out)
+07/11 22:15:29.481 INFO |cros_browser_backe:0095| Restarting Chrome (pid=5800) with remote port
+07/11 22:15:29.609 INFO |cros_browser_backe:0105| Starting Chrome: dbus-send --system --type=method_call --dest=org.chromium.SessionManager /org/chromium/SessionManager org.chromium.SessionManagerInterface.EnableChromeTesting boolean:true 'array:string:"--enable-net-benchmarking,--metrics-recording-only,--no-default-browser-check,--no-first-run,--ignore-background-tasks,--enable-gpu-benchmarking,--deny-permission-prompts,--autoplay-policy=no-user-gesture-required,--disable-component-extensions-with-background-pages,--disable-default-apps,--disable-search-geolocation-disclosure,--trace-startup-owner=devtools,--enable-smooth-scrolling,--enable-threaded-compositing,--remote-debugging-port=0,--start-maximized,--ash-disable-system-sounds,--oobe-skip-postlogin,--vmodule=*/chromeos/net/*=2\,*/chromeos/login/*=2\,chrome_browser_main_posix=2,--enable-crash-reporter-for-testing,--allow-failed-policy-fetch-for-test,--disable-gaia-services"' 'array:string:"CHROME_HEADLESS=1,BREAKPAD_DUMP_LOCATION='"'"'/var/log/chrome/Crash Reports/'"'"'"'
+07/11 22:15:51.834 INFO |          __init__:0047| DoNothingForwarder started between 127.0.0.1:35625 and 35625
+07/11 22:16:04.631 INFO |devtools_client_ba:0056| DevTools agent ready at ws://127.0.0.1:35625/devtools/browser/285851bf-50e1-4a14-8d14-80df309bedab
+07/11 22:16:21.176 INFO |              oobe:0057| Invoking Oobe.loginForTesting
+07/11 22:23:51.257 INFO |cros_browser_backe:0157| Browser is up!
+07/11 22:23:56.107 INFO |           browser:0135| Browser information:
+ Browser started (pid=5896).
+ OS: chromeos 
+ Browser command line: /opt/google/chrome/chrome --use-gl=egl --gpu-sandbox-failures-fatal=no --enable-logging --log-level=1 --use-cras --enable-wayland-server --user-data-dir=/home/chronos --enable-features=SmartDim,Crostini,CrostiniGpuSupport --system-developer-mode --disable-logging-redirect --login-profile=user --aura-legacy-power-button --ozone-nnpalm-properties={} --arc-build-properties={} --enterprise-enrollment-initial-modulus=15 --enterprise-enrollment-modulus-limit=19 --login-manager --enable-net-benchmarking --metrics-recording-only --no-default-browser-check --no-first-run --ignore-background-tasks --enable-gpu-benchmarking --deny-permission-prompts --autoplay-policy=no-user-gesture-required --disable-component-extensions-with-background-pages --disable-default-apps --disable-search-geolocation-disclosure --trace-startup-owner=devtools --enable-smooth-scrolling --enable-threaded-compositing --remote-debugging-port=0 --start-maximized --ash-disable-system-sounds --oobe-skip-postlogin --enable-crash-reporter-for-testing --allow-failed-policy-fetch-for-test --disable-gaia-services --testing-channel=NamedTestingInterface:/tmp/.org.chromium.Chromium.WFcHcf/.org.chromium.Chromium.IHYQdW --no-enable-crashpad --vmodule=certificate_provider*=1,*/search_result_ranker/*=1,*night_light*=1,*/chrome/browser/chromeos/account_manager/*=1,*/chromeos/components/account_manager/*=1,app_list_syncable_service=1,*/chromeos/power/auto_screen_brightness/*=1,*/forced_extensions/installation_tracker*=2,extension_downloader=2,existing_user_controller=2,*/ash/wm/tablet_mode/*=1,enrollment_screen_handler=1,*/browser/chromeos/login/enrollment/*=1,*/ui/ozone/*=1,*/ui/display/manager/chromeos/*=1,update_engine=1,component_updater_service=1,*/chromeos/net/*=2,*/chromeos/login/*=2,chrome_browser_main_posix=2 --enable-features=SmartDim,Crostini,CrostiniGpuSupport --ui-compositor-memory-limit-when-visible-mb=512
+ GPU device 0: VENDOR = 0x1af4 (VMware, Inc.), DEVICE = 0x1050 (llvmpipe (LLVM 9.0, 128 bits)), DRIVER_VENDOR = Mesa, DRIVER_VERSION = 19.1.0
+ GPU Attributes:
+  amd_switchable      : False
+  can_support_threaded_texture_mailbox: False
+  direct_rendering_version: 
+  gl_extensions       : GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clamp GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_OES_texture_stencil8 GL_EXT_blend_func_extended GL_EXT_float_blend GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_compression_bptc GL_EXT_texture_sRGB_R8 GL_MESA_framebuffer_flip_y GL_EXT_depth_clamp GL_EXT_texture_query_lod 
+  gl_renderer         : llvmpipe (LLVM 9.0, 128 bits)
+  gl_reset_notification_strategy: 0
+  gl_vendor           : VMware, Inc.
+  gl_version          : OpenGL ES 3.0 Mesa 19.1.0-devel (git-b43b55d461)
+  gl_ws_extensions    : EGL_EXT_image_dma_buf_import EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_image_dma_buf_export EGL_MESA_query_driver 
+  gl_ws_vendor        : Mesa Project
+  gl_ws_version       : 1.4
+  in_process_gpu      : False
+  initialization_time : 9.157914
+  jpeg_decode_accelerator_supported: False
+  max_msaa_samples    : 1
+  oop_rasterization_supported: True
+  optimus             : False
+  passthrough_cmd_decoder: False
+  pixel_shader_version: 3.00
+  process_crash_count : 0
+  sandboxed           : False
+  software_rendering  : False
+  subpixel_font_rendering: True
+  vertex_shader_version: 3.00
+  video_decode_accelerator_flags: 0
+ Feature Status:
+  2d_canvas           : enabled
+  flash_3d            : enabled
+  flash_stage3d       : enabled
+  flash_stage3d_baseline: enabled
+  gpu_compositing     : enabled
+  multiple_raster_threads: enabled_on
+  oop_rasterization   : unavailable_off
+  opengl              : enabled_on
+  protected_video_decode: unavailable_off
+  rasterization       : unavailable_off
+  skia_renderer       : disabled_off_ok
+  video_decode        : enabled
+  vulkan              : disabled_off
+  webgl               : enabled
+  webgl2              : enabled
+ Driver Bug Workarounds:
+  clear_uniforms_before_first_program_use
+  count_all_in_varyings_packing
+  scalarize_vec_and_mat_constructor_args
+  disabled_extension__gl__khr_blend_equation_advanced
+  disabled_extension__gl__khr_blend_equation_advanced_coherent
+07/11 22:24:05.653 INFO |           browser:0143| Closing browser (pid=5896) ...
+07/11 22:24:05.783 INFO |    cros_interface:0744| (Re)starting the ui (logs the user out)
+07/11 22:24:50.619 INFO |           browser:0157| Browser is closed.

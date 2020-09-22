@@ -1,0 +1,105 @@
+07/12 04:26:23.793 INFO |     tradefed_test:0096| Hostname: localhost:9222
+07/12 04:26:23.807 DEBUG|          ssh_host:0324| Running (ssh) 'cat "/etc/lsb-release"' from 'initialize|_verify_hosts|<genexpr>|get_release_builder_path|_get_lsb_release_content|run_very_slowly'
+07/12 04:26:24.608 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 04:26:24.608 DEBUG|             utils:0287| [stdout] CHROMEOS_DEVSERVER=http://chromebuild:8080
+07/12 04:26:24.608 DEBUG|             utils:0287| [stdout] GOOGLE_RELEASE=13342.0.2020_07_12_0241
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_NUMBER=13342
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BRANCH_NUMBER=0
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_CHROME_MILESTONE=86
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_PATCH_NUMBER=2020_07_12_0241
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_TRACK=testimage-channel
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_KEYSET=devkeys
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_NAME=Chromium OS
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_TYPE=Test Build - sgouda
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_VERSION=13342.0.2020_07_12_0241
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_AUSERVER=http://chromebuild:8080/update
+07/12 04:26:24.609 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_DESCRIPTION=13342.0.2020_07_12_0241 (Test Build - sgouda) developer-build amd64-generic
+07/12 04:26:24.645 DEBUG|          ssh_host:0324| Running (ssh) 'grep CHROMEOS_ARC_VERSION /etc/lsb-release' from 'initialize|initialize|_verify_hosts|<genexpr>|get_arc_version|run_very_slowly'
+07/12 04:26:25.547 DEBUG|          ssh_host:0324| Running (ssh) 'cat "/etc/lsb-release"' from '_get_max_retry|_get_branch_retry|_get_release_branch_number|get_release_version|_get_lsb_release_content|run_very_slowly'
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] CHROMEOS_DEVSERVER=http://chromebuild:8080
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] GOOGLE_RELEASE=13342.0.2020_07_12_0241
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_NUMBER=13342
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BRANCH_NUMBER=0
+07/12 04:26:26.645 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_CHROME_MILESTONE=86
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_PATCH_NUMBER=2020_07_12_0241
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_TRACK=testimage-channel
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_KEYSET=devkeys
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_NAME=Chromium OS
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_TYPE=Test Build - sgouda
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_VERSION=13342.0.2020_07_12_0241
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_AUSERVER=http://chromebuild:8080/update
+07/12 04:26:26.646 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_DESCRIPTION=13342.0.2020_07_12_0241 (Test Build - sgouda) developer-build amd64-generic
+07/12 04:26:26.723 DEBUG|          ssh_host:0324| Running (ssh) 'cat /etc/lsb-release' from '_get_max_retry|_get_board_retry|_get_board_name|get_board|parse_cmd_output|run_very_slowly'
+07/12 04:26:28.189 INFO |     tradefed_test:0857| No board retry specified for board: amd64-generic
+07/12 04:26:28.197 DEBUG|          ssh_host:0324| Running (ssh) 'cat "/etc/lsb-release"' from '_get_max_retry|_get_branch_retry|_get_release_branch_number|get_release_version|_get_lsb_release_content|run_very_slowly'
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_DEVSERVER=http://chromebuild:8080
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] GOOGLE_RELEASE=13342.0.2020_07_12_0241
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_NUMBER=13342
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BRANCH_NUMBER=0
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_CHROME_MILESTONE=86
+07/12 04:26:29.732 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_PATCH_NUMBER=2020_07_12_0241
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_TRACK=testimage-channel
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_KEYSET=devkeys
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_NAME=Chromium OS
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BUILD_TYPE=Test Build - sgouda
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_VERSION=13342.0.2020_07_12_0241
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_AUSERVER=http://chromebuild:8080/update
+07/12 04:26:29.733 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_DESCRIPTION=13342.0.2020_07_12_0241 (Test Build - sgouda) developer-build amd64-generic
+07/12 04:26:29.841 INFO |    tradefed_utils:0032| Waiting for cache lock...
+07/12 04:26:29.841 INFO |    tradefed_utils:0056| Acquired cache lock after 1 attempts.
+07/12 04:26:29.841 INFO |     tradefed_test:0509| Current cache size=0 of /tmp/autotest-tradefed-cache/cache.
+07/12 04:26:29.841 INFO |    tradefed_utils:0061| Released cache lock.
+07/12 04:26:29.842 INFO |    tradefed_utils:0032| Waiting for cache lock...
+07/12 04:26:29.842 INFO |    tradefed_utils:0056| Acquired cache lock after 1 attempts.
+07/12 04:26:29.842 INFO |     tradefed_test:0589| Not in lab. Downloading gs://chromeos-arc-images/builds/git_qt-release-static_sdk_tools/6118618/adb directly to /tmp/autotest-tradefed-cache/cache/0d80ff6f5cc49b1bc889a5215b96035b/adb.
+07/12 04:26:29.842 DEBUG|             utils:0219| Running 'gsutil cp 'gs://chromeos-arc-images/builds/git_qt-release-static_sdk_tools/6118618/adb' '/tmp/autotest-tradefed-cache/cache/0d80ff6f5cc49b1bc889a5215b96035b/adb''
+07/12 04:26:33.496 INFO |    tradefed_utils:0061| Released cache lock.
+07/12 04:26:33.497 INFO |    tradefed_utils:0032| Waiting for cache lock...
+07/12 04:26:33.497 INFO |    tradefed_utils:0056| Acquired cache lock after 1 attempts.
+07/12 04:26:33.497 INFO |     tradefed_test:0589| Not in lab. Downloading gs://chromeos-arc-images/builds/git_nyc-mr1-arc-linux-static_sdk_tools/3544738/aapt directly to /tmp/autotest-tradefed-cache/cache/4bd092f015ba402ee0579894be1cb6d5/aapt.
+07/12 04:26:33.498 DEBUG|             utils:0219| Running 'gsutil cp 'gs://chromeos-arc-images/builds/git_nyc-mr1-arc-linux-static_sdk_tools/3544738/aapt' '/tmp/autotest-tradefed-cache/cache/4bd092f015ba402ee0579894be1cb6d5/aapt''
+07/12 04:26:36.579 INFO |    tradefed_utils:0061| Released cache lock.
+07/12 04:26:36.580 INFO |    tradefed_utils:0032| Waiting for cache lock...
+07/12 04:26:36.580 INFO |    tradefed_utils:0056| Acquired cache lock after 1 attempts.
+07/12 04:26:36.581 INFO |     tradefed_test:0589| Not in lab. Downloading gs://chromeos-arc-images/cts/bundle/P/android-cts-9.0_r12-linux_x86-arm.zip directly to /tmp/autotest-tradefed-cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-cts-9.0_r12-linux_x86-arm.zip.
+07/12 04:26:36.581 DEBUG|             utils:0219| Running 'gsutil cp 'gs://chromeos-arc-images/cts/bundle/P/android-cts-9.0_r12-linux_x86-arm.zip' '/tmp/autotest-tradefed-cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-cts-9.0_r12-linux_x86-arm.zip''
+07/12 04:26:37.860 INFO |    tradefed_utils:0061| Released cache lock.
+07/12 04:26:37.860 WARNI|              test:0612| The test failed with the following exception
+Traceback (most recent call last):
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/test.py", line 573, in _exec
+    utils.cherry_pick_call(self.initialize, *args, **dargs)
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/utils.py", line 3197, in cherry_pick_call
+    return func(*p_args, **p_dargs)
+  File "/build/amd64-generic/usr/local/build/autotest/server/site_tests/cheets_CTS_P/cheets_CTS_P.py", line 137, in initialize
+    hard_reboot_on_failure=hard_reboot_on_failure)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 146, in initialize
+    uri or self._get_default_bundle_url(bundle))
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 664, in _install_bundle
+    cache_path = self._download_to_cache(gs_uri)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 549, in _download_to_cache
+    return self._download_to_dir(uri, output_dir)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 591, in _download_to_dir
+    utils.run('gsutil', args=('cp', uri, output), verbose=True)
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/utils.py", line 761, in run
+    "Command returned non-zero exit status")
+CmdError: Command <gsutil cp 'gs://chromeos-arc-images/cts/bundle/P/android-cts-9.0_r12-linux_x86-arm.zip' '/tmp/autotest-tradefed-cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-cts-9.0_r12-linux_x86-arm.zip'> failed, rc=1, Command returned non-zero exit status
+* Command: 
+    gsutil cp 'gs://chromeos-arc-images/cts/bundle/P/android-
+    cts-9.0_r12-linux_x86-arm.zip' '/tmp/autotest-tradefed-
+    cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-
+    cts-9.0_r12-linux_x86-arm.zip'
+Exit status: 1
+Duration: 1.26539111137
+
+stderr:
+AccessDeniedException: 403 sgouda@gmail.com does not have storage.objects.list access to the Google Cloud Storage bucket.
+07/12 04:26:37.862 DEBUG|              test:0617| Running cleanup for test.
+07/12 04:26:37.862 DEBUG|             utils:0219| Running 'adb -H localhost -P 5037 kill-server'
+07/12 04:26:37.878 INFO |     tradefed_test:0283| adb -H localhost -P 5037 kill-server:
+cannot connect to daemon at tcp:localhost:5037: Cannot assign requested address
+
+07/12 04:26:37.878 INFO |     tradefed_test:0179| Cleaning up /tmp/autotest-tradefed-install_sci1J3.
+07/12 04:26:37.882 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/12 04:26:37.983 DEBUG|   logging_manager:0634| Logging subprocess finished

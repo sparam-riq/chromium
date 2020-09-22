@@ -1,0 +1,30 @@
+07/12 05:10:28.147 WARNI|        server_job:0803| Not checking if job_repo_url contains autotest packages on ['localhost:9222']
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: {'drone': 'chromebuild', 'user': 'autotest_system', 'job_started': 1594530616, 'hostname': 'localhost:9222', 'status_version': 1, 'experimental': 'False', 'label': 'ad_hoc_build/ad_hoc_suite/login_LoginSuccess'}
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: MACHINE NAME: localhost:9222
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: MACHINE GROUP: amd64-generic
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: parsing partial test ---- SERVER_JOB
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test None CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.754 ERROR|   logging_manager:0633| CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| 
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| 
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: update RUNNING reason: completed successfully
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: parsing test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.756 ERROR|   logging_manager:0633| completed successfully
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: parsing test None CLIENT_JOB.0
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: None
+07/12 05:26:44.757 ERROR|   logging_manager:0633| Testname: CLIENT_JOB.0
+07/12 05:26:44.757 ERROR|   logging_manager:0633| 
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: parsing test ---- SERVER_JOB
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.

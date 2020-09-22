@@ -1,0 +1,2854 @@
+07/11 22:12:05.089 INFO |               job:0200| Writing results to /usr/local/autotest/results/default
+07/11 22:12:05.259 DEBUG|          base_job:0253| Importing client.sysinfo from state file /usr/local/autotest/control.autoserv.state
+07/11 22:12:05.276 DEBUG|          base_job:0253| Importing global_properties.max_result_size_KB from state file /usr/local/autotest/control.autoserv.state
+07/11 22:12:05.296 DEBUG|          base_job:0253| Importing global_properties.tag from state file /usr/local/autotest/control.autoserv.state
+07/11 22:12:05.319 DEBUG|          base_job:0253| Importing global_properties.fast from state file /usr/local/autotest/control.autoserv.state
+07/11 22:12:05.752 DEBUG|               job:0909| Initializing the state engine
+07/11 22:12:05.844 DEBUG|          base_job:0357| Persistent state client.steps now set to []
+07/11 22:12:06.047 DEBUG|          base_job:0357| Persistent state client.harness now set to 'autoserv'
+07/11 22:12:06.157 DEBUG|               job:0932| Persistent option harness now set to autoserv
+07/11 22:12:06.424 DEBUG|               job:0932| Persistent option harness_args now set to None
+07/11 22:12:06.443 DEBUG|           harness:0088| Selected harness: autoserv
+07/11 22:12:06.819 DEBUG|          base_job:0357| Persistent state global_properties.fast now set to False
+07/11 22:12:07.654 DEBUG|      base_sysinfo:0180| Loggable runs cmd: gcc --version
+07/11 22:12:08.259 DEBUG|      base_sysinfo:0180| Loggable runs cmd: hostname
+07/11 22:12:08.894 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/interrupts
+07/11 22:12:08.946 DEBUG|      base_sysinfo:0180| Loggable runs cmd: uname -a
+07/11 22:12:09.684 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/version
+07/11 22:12:09.841 DEBUG|      base_sysinfo:0180| Loggable runs cmd: tree /mnt/stateful_partition/var_overlay/cache/dlc-images
+07/11 22:12:10.544 DEBUG|      base_sysinfo:0180| Loggable runs cmd: lspci -vvn
+07/11 22:12:12.296 DEBUG|      base_sysinfo:0180| Loggable runs cmd: crossystem
+07/11 22:12:13.359 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/modules
+07/11 22:12:15.546 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/messages
+07/11 22:12:15.615 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/meminfo
+07/11 22:12:15.700 DEBUG|      base_sysinfo:0180| Loggable runs cmd: ld --version
+07/11 22:12:16.197 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/proc_mounts
+07/11 22:12:16.282 DEBUG|      base_sysinfo:0180| Loggable runs cmd: ls -l /boot
+07/11 22:12:17.360 DEBUG|      base_sysinfo:0180| Loggable runs cmd: dmesg -c | gzip -9
+07/11 22:12:18.234 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/results/default/sysinfo/var/spool'
+07/11 22:12:19.705 DEBUG|             utils:0219| Running 'rsync --no-perms --chmod=ugo+r -a --safe-links --exclude=/crash/**autoserv* --exclude=/crash/**.journal --exclude=/crash/*.core /var/spool/crash /usr/local/autotest/results/default/sysinfo/var/spool'
+07/11 22:12:21.289 DEBUG|             utils:0219| Running 'rm -rf /var/spool/crash/*'
+07/11 22:12:22.389 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/cpuinfo
+07/11 22:12:22.581 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/slabinfo
+07/11 22:12:22.599 DEBUG|      base_sysinfo:0180| Loggable runs cmd: df -mP
+07/11 22:12:23.293 DEBUG|      base_sysinfo:0180| Loggable runs cmd: dlcservice_util --list
+07/11 22:12:25.478 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/partitions
+07/11 22:12:25.538 DEBUG|      base_sysinfo:0180| Loggable runs cmd: mount
+07/11 22:12:26.519 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/cmdline
+07/11 22:12:26.638 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/bios_info.txt
+07/11 22:12:26.722 DEBUG|      base_sysinfo:0180| Loggable runs cmd: tree /var/cache/dlc
+07/11 22:12:27.579 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/storage_info.txt
+07/11 22:12:27.686 DEBUG|      base_sysinfo:0180| Loggable runs cmd: uptime
+07/11 22:12:28.576 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/sysinfo/pstore/sys/fs/pstore
+07/11 22:12:28.669 DEBUG|      base_sysinfo:0180| Loggable runs cmd: losetup
+07/11 22:12:30.231 INFO |               job:0232| START	----	----	timestamp=1594530749	localtime=Jul 11 22:12:29	
+07/11 22:12:31.094 DEBUG|          base_job:0357| Persistent state client._record_indent now set to 1
+07/11 22:12:31.367 DEBUG|             utils:0219| Running '[ -r /var/lib/cleanup_logs_paused ]'
+07/11 22:12:32.148 DEBUG|             utils:0219| Running 'touch /var/lib/cleanup_logs_paused'
+07/11 22:12:35.160 INFO |               job:0232| 	START	login_LoginSuccess	login_LoginSuccess	timestamp=1594530754	localtime=Jul 11 22:12:34	
+07/11 22:12:36.343 DEBUG|          base_job:0357| Persistent state client._record_indent now set to 2
+07/11 22:12:36.608 DEBUG|          base_job:0357| Persistent state client.unexpected_reboot now set to ('login_LoginSuccess', 'login_LoginSuccess')
+07/11 22:12:36.814 DEBUG|               job:0513| Waiting for pid 5519
+07/11 22:12:36.903 DEBUG|             utils:0219| Running 'logger "autotest runtest login_LoginSuccess"'
+07/11 22:12:38.052 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/packages'
+07/11 22:12:39.084 DEBUG|             utils:0219| Running 'test -d /usr/local/autotest/packages'
+07/11 22:12:39.943 DEBUG|             utils:0219| Running 'test -e /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2'
+07/11 22:12:40.728 INFO |  harness_autoserv:0115| Fetching test-login_LoginSuccess.tar.bz2 from autoserv to /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2.
+07/11 22:12:46.035 DEBUG|  harness_autoserv:0118| Successfully fetched test-login_LoginSuccess.tar.bz2 from autoserv.
+07/11 22:12:46.105 DEBUG|             utils:0219| Running 'md5sum /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2 '
+07/11 22:12:47.273 DEBUG|             utils:0219| Running 'test -e /usr/local/autotest/packages.checksum'
+07/11 22:12:48.187 DEBUG|             utils:0219| Running 'test -d /usr/local/autotest'
+07/11 22:12:49.079 DEBUG|             utils:0219| Running 'test -e /usr/local/autotest/packages.checksum'
+07/11 22:12:49.971 INFO |  harness_autoserv:0115| Fetching packages.checksum from autoserv to /usr/local/autotest/packages.checksum.
+07/11 22:12:51.219 DEBUG|          packages:0492| packages.checksum not fetched from autoserv.
+07/11 22:12:51.258 DEBUG|          packages:0497| packages.checksum could not be fetched from any of the repos ['autoserv://']
+07/11 22:12:52.259 DEBUG|             utils:0219| Running 'test -d /usr/local/autotest/tests/login_LoginSuccess'
+07/11 22:12:53.257 DEBUG|             utils:0219| Running 'rm -rf /usr/local/autotest/tests/login_LoginSuccess'
+07/11 22:12:54.398 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/tests/login_LoginSuccess'
+07/11 22:12:55.491 DEBUG|             utils:0219| Running 'tar --no-same-owner -xjf /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2 -C /usr/local/autotest/tests/login_LoginSuccess'
+07/11 22:12:56.997 DEBUG|             utils:0219| Running 'md5sum /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2 '
+07/11 22:12:58.194 DEBUG|             utils:0219| Running 'echo "1d62024203b54a6ba4f49d2ca8927bf2" > /usr/local/autotest/tests/login_LoginSuccess/.checksum '
+07/11 22:13:35.117 WARNI|  external_modules:0061| Unable to import cv2 due to: cv2 has version 4.1.2, but version at or above 2.4.8 and below 3.0.0 is required
+07/11 22:13:44.768 DEBUG|             utils:0219| Running 'scanelf -qF'%s#F' -gs __asan_init `which debugd`'
+07/11 22:13:46.454 DEBUG|              asan:0026| running_on_asan(): symbol: '', _ASAN_SYMBOL: '__asan_init'
+07/11 22:13:46.982 INFO |              test:0827| Starting before_hook for login_LoginSuccess
+07/11 22:13:47.120 DEBUG|             utils:0219| Running '/usr/bin/journalctl  -n0 --show-cursor -q'
+07/11 22:13:48.685 DEBUG|             utils:0219| Running 'grep MemTotal /proc/meminfo'
+07/11 22:13:50.117 DEBUG|             utils:0219| Running 'cat /etc/lsb-release'
+07/11 22:13:51.714 DEBUG|             utils:0219| Running 'crossystem hwid'
+07/11 22:13:52.910 DEBUG|             utils:0219| Running 'crossystem mainfw_type'
+07/11 22:13:53.817 INFO |      site_sysinfo:0426| HWID not available; not logging it as a test keyval.
+07/11 22:13:53.863 DEBUG|             utils:0219| Running '/opt/google/chrome/chrome --version'
+07/11 22:13:59.992 DEBUG|             utils:0219| Running '/usr/sbin/cryptohome --action=tpm_more_status | grep : 2>&1'
+07/11 22:14:17.874 DEBUG|             utils:0287| [stdout]   enabled: false
+07/11 22:14:17.935 DEBUG|             utils:0287| [stdout]   owned: false
+07/11 22:14:17.968 DEBUG|             utils:0287| [stdout]   initialized: false
+07/11 22:14:17.998 DEBUG|             utils:0287| [stdout]   attestation_prepared: false
+07/11 22:14:18.023 DEBUG|             utils:0287| [stdout]   attestation_enrolled: false
+07/11 22:14:18.054 DEBUG|             utils:0287| [stdout]   install_lockbox_finalized: false
+07/11 22:14:18.088 DEBUG|             utils:0287| [stdout]   boot_lockbox_finalized: false
+07/11 22:14:18.121 DEBUG|             utils:0287| [stdout]   verified_boot_measured: false
+07/11 22:14:18.152 DEBUG|             utils:0287| [stdout]   is_locked_to_single_user: false
+07/11 22:14:19.058 INFO |              test:0831| before_hook completed
+07/11 22:14:21.250 DEBUG|              test:0356| Starting before_iteration_hooks for login_LoginSuccess
+07/11 22:14:21.415 DEBUG|      base_sysinfo:0180| Loggable runs cmd: /opt/google/chrome/chrome --version
+07/11 22:14:24.843 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/interrupts.before
+07/11 22:14:24.984 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/schedstat.before
+07/11 22:14:25.036 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/meminfo.before
+07/11 22:14:25.067 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/slabinfo.before
+07/11 22:14:25.710 INFO |      base_sysinfo:0405| ChromeOS BOARD = amd64-generic_VM
+07/11 22:14:25.806 DEBUG|             utils:0219| Running 'logger "autotest starting iteration /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1 on amd64-generic_VM"'
+07/11 22:14:26.898 DEBUG|              test:0361| before_iteration_hooks completed
+07/11 22:14:26.992 DEBUG|              test:0376| starting test(run_once()), test details follow
+args: ()
+kwargs: {}
+07/11 22:14:50.083 INFO |    browser_finder:0138| Chose browser: PossibleCrOSBrowser(browser_type=system)
+07/11 22:14:50.190 DEBUG|          cmd_util:0049| sh -c mv '/var/log/chrome/Crash Reports/' /tmp/existing_minidumps_b21683a1 
+07/11 22:14:51.106 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[]
+07/11 22:14:51.227 INFO |    cros_interface:0744| (Re)starting the ui (logs the user out)
+07/11 22:14:51.960 DEBUG|          cmd_util:0049| sh -c stop ui 
+07/11 22:15:11.413 DEBUG|          cmd_util:0058|  > stdout=[ui stop/waiting
+], stderr=[]
+07/11 22:15:11.514 DEBUG|    cros_interface:0529| rm -rf /var/lib/whitelist/*
+07/11 22:15:11.882 DEBUG|    cros_interface:0529| rm -rf /home/chronos/Local\ State
+07/11 22:15:12.804 DEBUG|    cros_interface:0558| IsServiceRunning(ui)->False
+07/11 22:15:12.830 DEBUG|          cmd_util:0049| sh -c start ui 
+07/11 22:15:16.416 DEBUG|          cmd_util:0058|  > stdout=[ui start/running, process 5775
+], stderr=[]
+07/11 22:15:19.088 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[210 processes]
+07/11 22:15:21.635 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[211 processes]
+07/11 22:15:21.760 DEBUG|          cmd_util:0049| sh -c cryptohome --action=remove --force --user=test@test.test 
+07/11 22:15:23.880 DEBUG|          cmd_util:0058|  > stdout=[Remove succeeded.
+], stderr=[]
+07/11 22:15:26.047 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[213 processes]
+07/11 22:15:26.163 DEBUG|    cros_interface:0529| rm -rf /home/chronos/DevToolsActivePort
+07/11 22:15:26.533 DEBUG|          cmd_util:0049| sh -c uname -m 
+07/11 22:15:27.004 DEBUG|          cmd_util:0058|  > stdout=[x86_64
+], stderr=[]
+07/11 22:15:29.319 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[218 processes]
+07/11 22:15:29.481 INFO |cros_browser_backe:0095| Restarting Chrome (pid=5800) with remote port
+07/11 22:15:29.609 INFO |cros_browser_backe:0105| Starting Chrome: dbus-send --system --type=method_call --dest=org.chromium.SessionManager /org/chromium/SessionManager org.chromium.SessionManagerInterface.EnableChromeTesting boolean:true 'array:string:"--enable-net-benchmarking,--metrics-recording-only,--no-default-browser-check,--no-first-run,--ignore-background-tasks,--enable-gpu-benchmarking,--deny-permission-prompts,--autoplay-policy=no-user-gesture-required,--disable-component-extensions-with-background-pages,--disable-default-apps,--disable-search-geolocation-disclosure,--trace-startup-owner=devtools,--enable-smooth-scrolling,--enable-threaded-compositing,--remote-debugging-port=0,--start-maximized,--ash-disable-system-sounds,--oobe-skip-postlogin,--vmodule=*/chromeos/net/*=2\,*/chromeos/login/*=2\,chrome_browser_main_posix=2,--enable-crash-reporter-for-testing,--allow-failed-policy-fetch-for-test,--disable-gaia-services"' 'array:string:"CHROME_HEADLESS=1,BREAKPAD_DUMP_LOCATION='"'"'/var/log/chrome/Crash Reports/'"'"'"'
+07/11 22:15:29.664 DEBUG|          cmd_util:0049| sh -c dbus-send --system --type=method_call --dest=org.chromium.SessionManager /org/chromium/SessionManager org.chromium.SessionManagerInterface.EnableChromeTesting boolean:true array:string:"--enable-net-benchmarking,--metrics-recording-only,--no-default-browser-check,--no-first-run,--ignore-background-tasks,--enable-gpu-benchmarking,--deny-permission-prompts,--autoplay-policy=no-user-gesture-required,--disable-component-extensions-with-background-pages,--disable-default-apps,--disable-search-geolocation-disclosure,--trace-startup-owner=devtools,--enable-smooth-scrolling,--enable-threaded-compositing,--remote-debugging-port=0,--start-maximized,--ash-disable-system-sounds,--oobe-skip-postlogin,--vmodule=*/chromeos/net/*=2\,*/chromeos/login/*=2\,chrome_browser_main_posix=2,--enable-crash-reporter-for-testing,--allow-failed-policy-fetch-for-test,--disable-gaia-services" array:string:"CHROME_HEADLESS=1,BREAKPAD_DUMP_LOCATION='/var/log/chrome/Crash Reports/'" 
+07/11 22:15:30.593 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[]
+07/11 22:15:32.429 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[210 processes]
+07/11 22:15:32.496 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp3ZxyTQ)
+07/11 22:15:32.519 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpccame2)
+07/11 22:15:32.642 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpG7Ia5P)
+07/11 22:15:32.762 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpaVSuz_)
+07/11 22:15:32.883 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpI5Ju3E)
+07/11 22:15:33.063 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpPKQ68F)
+07/11 22:15:33.194 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpAsETso)
+07/11 22:15:33.328 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpe8WHrO)
+07/11 22:15:33.463 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp9kxYr8)
+07/11 22:15:33.609 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpreoDAB)
+07/11 22:15:33.819 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpRT5a6e)
+07/11 22:15:33.983 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpyIDPhx)
+07/11 22:15:34.181 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpDWQDxP)
+07/11 22:15:34.381 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp76AAMW)
+07/11 22:15:34.626 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpdPP7Ya)
+07/11 22:15:34.892 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp1ViU6J)
+07/11 22:15:35.271 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp55KSnv)
+07/11 22:15:35.627 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpjpSMcC)
+07/11 22:15:35.991 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpWfCzBi)
+07/11 22:15:36.377 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpsJgdgA)
+07/11 22:15:36.814 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpDJHi_j)
+07/11 22:15:37.299 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpjlKHj5)
+07/11 22:15:37.824 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpQRojg8)
+07/11 22:15:38.403 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmp7giJpJ)
+07/11 22:15:39.092 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpUSn4wI)
+07/11 22:15:39.790 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpavrgm0)
+07/11 22:15:40.601 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpIyMvqk)
+07/11 22:15:41.677 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpnmYfJK)
+07/11 22:15:42.908 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpIhF1xK)
+07/11 22:15:44.040 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpj0uKMl)
+07/11 22:15:45.281 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpDXLETG)
+07/11 22:15:46.610 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpzvW2gG)
+07/11 22:15:48.068 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpag3LBs)
+07/11 22:15:49.658 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpjPDJ35)
+07/11 22:15:51.440 DEBUG|    cros_interface:0338| GetFile(/home/chronos/DevToolsActivePort, /tmp/tmpamM8G9)
+07/11 22:15:51.522 DEBUG|    cros_interface:0387| GetFileContents(/home/chronos/DevToolsActivePort)->35625
+/devtools/browser/285851bf-50e1-4a14-8d14-80df309bedab
+07/11 22:15:51.834 INFO |          __init__:0047| DoNothingForwarder started between 127.0.0.1:35625 and 35625
+07/11 22:16:04.631 INFO |devtools_client_ba:0056| DevTools agent ready at ws://127.0.0.1:35625/devtools/browser/285851bf-50e1-4a14-8d14-80df309bedab
+07/11 22:16:09.348 DEBUG| inspector_backend:0070| InspectorBackend._Connect() to ws://127.0.0.1:35625/devtools/page/868CF169EA029909F86AE796327797A7
+07/11 22:16:11.810 DEBUG|inspector_websocke:0117| sent [{
+  "id": 0, 
+  "method": "Log.enable"
+}]
+07/11 22:16:14.036 DEBUG|inspector_websocke:0188| got [{
+  "id": 0, 
+  "result": {}
+}]
+07/11 22:16:14.126 DEBUG|inspector_websocke:0117| sent [{
+  "id": 1, 
+  "method": "Page.enable"
+}]
+07/11 22:16:20.042 DEBUG|inspector_websocke:0188| got [{
+  "method": "Log.entryAdded", 
+  "params": {
+    "entry": {
+      "level": "warning", 
+      "lineNumber": 10, 
+      "source": "deprecation", 
+      "text": "HTML Imports is deprecated and will be removed in M80, around February 2020. Please use ES modules instead. See https://www.chromestatus.com/features/5144752345317376 and https://developers.google.com/web/updates/2019/07/web-components-time-to-upgrade for more details.", 
+      "timestamp": 1594530976104.3511, 
+      "url": "chrome://oobe/oobe"
+    }
+  }
+}]
+07/11 22:16:20.091 DEBUG|inspector_websocke:0188| got [{
+  "id": 1, 
+  "result": {}
+}]
+07/11 22:16:20.132 DEBUG|inspector_websocke:0117| sent [{
+  "id": 2, 
+  "method": "ServiceWorker.enable"
+}]
+07/11 22:16:21.096 DEBUG|inspector_websocke:0188| got [{
+  "id": 2, 
+  "result": {}
+}]
+07/11 22:16:21.176 INFO |              oobe:0057| Invoking Oobe.loginForTesting
+07/11 22:16:22.724 DEBUG|inspector_websocke:0117| sent [{
+  "id": 3, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:22.802 DEBUG|inspector_websocke:0188| got [{
+  "method": "ServiceWorker.workerRegistrationUpdated", 
+  "params": {
+    "registrations": []
+  }
+}]
+07/11 22:16:22.863 DEBUG|inspector_websocke:0188| got [{
+  "method": "ServiceWorker.workerVersionUpdated", 
+  "params": {
+    "versions": []
+  }
+}]
+07/11 22:16:22.934 DEBUG|inspector_websocke:0188| got [{
+  "id": 3, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:23.021 DEBUG|inspector_websocke:0117| sent [{
+  "id": 4, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:23.734 DEBUG|inspector_websocke:0188| got [{
+  "id": 4, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:23.947 DEBUG|inspector_websocke:0117| sent [{
+  "id": 5, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:24.428 DEBUG|inspector_websocke:0188| got [{
+  "id": 5, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:24.638 DEBUG|inspector_websocke:0117| sent [{
+  "id": 6, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:27.013 DEBUG|inspector_websocke:0188| got [{
+  "id": 6, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:27.508 DEBUG|inspector_websocke:0117| sent [{
+  "id": 7, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:27.653 DEBUG|inspector_websocke:0188| got [{
+  "id": 7, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:28.181 DEBUG|inspector_websocke:0117| sent [{
+  "id": 8, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:28.293 DEBUG|inspector_websocke:0188| got [{
+  "id": 8, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:28.875 DEBUG|inspector_websocke:0117| sent [{
+  "id": 9, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:29.035 DEBUG|inspector_websocke:0188| got [{
+  "id": 9, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:29.694 DEBUG|inspector_websocke:0117| sent [{
+  "id": 10, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:30.232 DEBUG|inspector_websocke:0188| got [{
+  "id": 10, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:31.015 DEBUG|inspector_websocke:0117| sent [{
+  "id": 11, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:31.515 DEBUG|inspector_websocke:0188| got [{
+  "id": 11, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:32.444 DEBUG|inspector_websocke:0117| sent [{
+  "id": 12, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:33.124 DEBUG|inspector_websocke:0188| got [{
+  "id": 12, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:34.238 DEBUG|inspector_websocke:0117| sent [{
+  "id": 13, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:34.865 DEBUG|inspector_websocke:0188| got [{
+  "id": 13, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:36.118 DEBUG|inspector_websocke:0117| sent [{
+  "id": 14, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:36.687 DEBUG|inspector_websocke:0188| got [{
+  "id": 14, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:38.151 DEBUG|inspector_websocke:0117| sent [{
+  "id": 15, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:38.806 DEBUG|inspector_websocke:0188| got [{
+  "id": 15, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:40.451 DEBUG|inspector_websocke:0117| sent [{
+  "id": 16, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:41.465 DEBUG|inspector_websocke:0188| got [{
+  "id": 16, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:43.358 DEBUG|inspector_websocke:0117| sent [{
+  "id": 17, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:43.741 DEBUG|inspector_websocke:0188| got [{
+  "id": 17, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:45.875 DEBUG|inspector_websocke:0117| sent [{
+  "id": 18, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:45.964 DEBUG|inspector_websocke:0188| got [{
+  "id": 18, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:48.323 DEBUG|inspector_websocke:0117| sent [{
+  "id": 19, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:16:50.418 DEBUG|inspector_websocke:0188| got [{
+  "id": 19, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:16:53.258 DEBUG|inspector_websocke:0117| sent [{
+  "id": 20, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:02.770 DEBUG|inspector_websocke:0188| got [{
+  "id": 20, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:06.967 DEBUG|inspector_websocke:0117| sent [{
+  "id": 21, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:07.917 DEBUG|inspector_websocke:0188| got [{
+  "id": 21, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:12.477 DEBUG|inspector_websocke:0117| sent [{
+  "id": 22, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:12.551 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "83489F0BAEBD5B2C574DBC63A322EF7F", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:12.626 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "83489F0BAEBD5B2C574DBC63A322EF7F"
+  }
+}]
+07/11 22:17:12.677 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "83489F0BAEBD5B2C574DBC63A322EF7F", 
+      "loaderId": "8CB7348BCD03FF3F6330BE0E6FA172AF", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:12.721 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "83489F0BAEBD5B2C574DBC63A322EF7F"
+  }
+}]
+07/11 22:17:12.787 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "FB85D2DCD6E4A7AF9B2F3A5E2B19573E", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:12.808 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "FB85D2DCD6E4A7AF9B2F3A5E2B19573E"
+  }
+}]
+07/11 22:17:12.844 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "FB85D2DCD6E4A7AF9B2F3A5E2B19573E", 
+      "loaderId": "E8CC42299DCE3B60290CBBEEDAB8CEE1", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:12.886 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "FB85D2DCD6E4A7AF9B2F3A5E2B19573E"
+  }
+}]
+07/11 22:17:13.273 DEBUG|inspector_websocke:0188| got [{
+  "id": 22, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:18.338 DEBUG|inspector_websocke:0117| sent [{
+  "id": 23, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:18.468 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "0A642AA0F8CB628134518C06FD257E03", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:18.543 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "0A642AA0F8CB628134518C06FD257E03"
+  }
+}]
+07/11 22:17:18.588 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "0A642AA0F8CB628134518C06FD257E03", 
+      "loaderId": "1ED981C3A73730E96B2DB8C2E10534E8", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:18.646 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "0A642AA0F8CB628134518C06FD257E03"
+  }
+}]
+07/11 22:17:20.414 DEBUG|inspector_websocke:0188| got [{
+  "id": 23, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:25.477 DEBUG|inspector_websocke:0117| sent [{
+  "id": 24, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:25.598 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "D60881722D00D9E3A2CA80C119FC4DC7", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50471, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:25.651 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "D60881722D00D9E3A2CA80C119FC4DC7"
+  }
+}]
+07/11 22:17:25.685 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "D60881722D00D9E3A2CA80C119FC4DC7", 
+      "loaderId": "D6F8281B9FD2A2224C44BCE64CFD87BB", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:25.720 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "D60881722D00D9E3A2CA80C119FC4DC7"
+  }
+}]
+07/11 22:17:25.848 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "490C8E98A4266ACB96E18D0F234B39AC", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50471, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:25.879 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "490C8E98A4266ACB96E18D0F234B39AC"
+  }
+}]
+07/11 22:17:25.912 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "490C8E98A4266ACB96E18D0F234B39AC", 
+      "loaderId": "EA826C6A45D7333BF5994948A9B0108C", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:25.941 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "490C8E98A4266ACB96E18D0F234B39AC"
+  }
+}]
+07/11 22:17:26.692 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "24DBEA32FAFA9C84A6FEB91EE51D9BFE", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:26.791 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "24DBEA32FAFA9C84A6FEB91EE51D9BFE"
+  }
+}]
+07/11 22:17:27.128 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "24DBEA32FAFA9C84A6FEB91EE51D9BFE", 
+      "loaderId": "54963A19ECF7DE9972505E015D4FC98C", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:27.179 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "24DBEA32FAFA9C84A6FEB91EE51D9BFE"
+  }
+}]
+07/11 22:17:27.271 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "EAAD693797FCBA056FED7D3AFC3322BA", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:27.343 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "EAAD693797FCBA056FED7D3AFC3322BA"
+  }
+}]
+07/11 22:17:27.466 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "EAAD693797FCBA056FED7D3AFC3322BA", 
+      "loaderId": "55C7388C5B89748820251F0DE9A9C28F", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:27.496 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "EAAD693797FCBA056FED7D3AFC3322BA"
+  }
+}]
+07/11 22:17:28.477 DEBUG|inspector_websocke:0188| got [{
+  "id": 24, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:33.532 DEBUG|inspector_websocke:0117| sent [{
+  "id": 25, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:33.606 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "7B41CC147FDF99FAFF45BA1E7CFB4012", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:33.661 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "7B41CC147FDF99FAFF45BA1E7CFB4012"
+  }
+}]
+07/11 22:17:33.701 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "7B41CC147FDF99FAFF45BA1E7CFB4012", 
+      "loaderId": "B54F669FC39FF8305B812B7B07DAE6FF", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:33.795 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "7B41CC147FDF99FAFF45BA1E7CFB4012"
+  }
+}]
+07/11 22:17:34.649 DEBUG|inspector_websocke:0188| got [{
+  "id": 25, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:39.701 DEBUG|inspector_websocke:0117| sent [{
+  "id": 26, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:41.535 DEBUG|inspector_websocke:0188| got [{
+  "id": 26, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:46.582 DEBUG|inspector_websocke:0117| sent [{
+  "id": 27, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:46.749 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "FDA42CA6CC46550DD6482A9956326242", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:46.797 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "FDA42CA6CC46550DD6482A9956326242"
+  }
+}]
+07/11 22:17:46.829 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "FDA42CA6CC46550DD6482A9956326242", 
+      "loaderId": "ED890B8D72477789011ECEC6B8246770", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:46.853 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "FDA42CA6CC46550DD6482A9956326242"
+  }
+}]
+07/11 22:17:47.451 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameAttached", 
+  "params": {
+    "frameId": "3AE4210D22AE31F371B31FFDD0734BE4", 
+    "parentFrameId": "868CF169EA029909F86AE796327797A7", 
+    "stack": {
+      "callFrames": [
+        {
+          "columnNumber": 70204, 
+          "functionName": "_attachDom", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 70044, 
+          "functionName": "_readyClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49801, 
+          "functionName": "_flushClients", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50834, 
+          "functionName": "_propertiesChanged", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23992, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 49682, 
+          "functionName": "_flushProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 50418, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69986, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 100312, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 110200, 
+          "functionName": "ready", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 23771, 
+          "functionName": "_enableProperties", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 64355, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 69868, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }, 
+        {
+          "columnNumber": 99642, 
+          "functionName": "connectedCallback", 
+          "lineNumber": 10, 
+          "scriptId": "28", 
+          "url": "chrome://resources/polymer/v1_0/polymer/polymer-extracted.js"
+        }
+      ]
+    }
+  }
+}]
+07/11 22:17:47.488 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStartedLoading", 
+  "params": {
+    "frameId": "3AE4210D22AE31F371B31FFDD0734BE4"
+  }
+}]
+07/11 22:17:47.839 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameNavigated", 
+  "params": {
+    "frame": {
+      "id": "3AE4210D22AE31F371B31FFDD0734BE4", 
+      "loaderId": "6B6F0F539313850C89A45209F558899C", 
+      "mimeType": "text/html", 
+      "name": "", 
+      "parentId": "868CF169EA029909F86AE796327797A7", 
+      "securityOrigin": "://", 
+      "url": "about:blank"
+    }
+  }
+}]
+07/11 22:17:47.877 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "3AE4210D22AE31F371B31FFDD0734BE4"
+  }
+}]
+07/11 22:17:50.152 DEBUG|inspector_websocke:0188| got [{
+  "id": 27, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:17:55.242 DEBUG|inspector_websocke:0117| sent [{
+  "id": 28, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:17:58.528 DEBUG|inspector_websocke:0188| got [{
+  "id": 28, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:18:03.575 DEBUG|inspector_websocke:0117| sent [{
+  "id": 29, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe == 'function' && Oobe.readyForTesting", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:18:06.659 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.loadEventFired", 
+  "params": {
+    "timestamp": 3440.389713
+  }
+}]
+07/11 22:18:06.733 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.frameStoppedLoading", 
+  "params": {
+    "frameId": "868CF169EA029909F86AE796327797A7"
+  }
+}]
+07/11 22:18:06.784 DEBUG|inspector_websocke:0188| got [{
+  "method": "Page.domContentEventFired", 
+  "params": {
+    "timestamp": 3440.449435
+  }
+}]
+07/11 22:18:06.825 DEBUG|inspector_websocke:0188| got [{
+  "id": 29, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": true
+    }
+  }
+}]
+07/11 22:18:06.904 DEBUG|inspector_websocke:0117| sent [{
+  "id": 30, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "typeof Oobe.loginForTesting == 'undefined'", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:18:28.728 DEBUG|inspector_websocke:0188| got [{
+  "id": 30, 
+  "result": {
+    "result": {
+      "type": "boolean", 
+      "value": false
+    }
+  }
+}]
+07/11 22:18:28.838 DEBUG|inspector_websocke:0117| sent [{
+  "id": 31, 
+  "method": "Runtime.evaluate", 
+  "params": {
+    "awaitPromise": false, 
+    "expression": "Oobe.loginForTesting(\"test@test.test\", \"\", \"12345\", false); 0;", 
+    "returnByValue": true, 
+    "userGesture": false
+  }
+}]
+07/11 22:18:33.888 DEBUG|inspector_websocke:0188| got [{
+  "id": 31, 
+  "result": {
+    "result": {
+      "description": "0", 
+      "type": "number", 
+      "value": 0
+    }
+  }
+}]
+07/11 22:18:33.948 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:35.829 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:36.023 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:37.319 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:18:37.444 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:39.193 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:39.339 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:40.525 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:18:42.840 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:44.757 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:45.047 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:46.551 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:18:46.700 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:48.033 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:48.210 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:49.452 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:18:51.440 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:52.822 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:52.961 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:54.244 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:18:54.422 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:18:55.697 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:18:55.791 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:18:56.882 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:18:59.103 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:00.360 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:00.502 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:01.560 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:01.688 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:02.843 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:02.938 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:04.024 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:06.800 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:08.156 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:08.279 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:09.342 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:09.605 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:10.820 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:10.998 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:12.210 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:16.265 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:17.643 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:17.765 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:18.826 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:18.969 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:20.185 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:20.323 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:21.393 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:25.919 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:27.472 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:27.588 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:28.658 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:28.787 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:30.219 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:30.313 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:31.180 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:36.873 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:37.795 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:37.911 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:38.962 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:39.062 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:40.284 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:40.419 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:41.520 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:47.431 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:48.772 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:48.882 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:50.006 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:19:50.146 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:51.426 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:19:51.529 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:19:52.592 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:19:58.399 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:19:59.869 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:00.001 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:01.133 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:20:01.350 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:02.870 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:03.031 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:04.250 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:20:10.044 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:11.411 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:11.524 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:12.575 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:20:12.729 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:14.377 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:14.686 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:16.244 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:25.702 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:27.411 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:27.545 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:28.737 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:20:28.847 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:30.214 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:30.333 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:31.894 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:53.856 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:55.168 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:55.304 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:56.299 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:20:56.404 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:20:57.732 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:20:57.853 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:20:58.978 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:07.507 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:08.908 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:09.070 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:10.400 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:21:10.542 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:12.199 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:12.507 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:13.823 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:36.065 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:37.472 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:37.603 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:38.776 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:21:38.886 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:39.893 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:40.064 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:40.950 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:53.167 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:54.643 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:54.765 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:55.976 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:21:56.085 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:21:57.322 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:21:57.452 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:21:58.537 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:05.415 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:06.775 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:06.904 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:08.090 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:22:08.182 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:09.460 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:09.651 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:10.960 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:17.137 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:18.460 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:18.630 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:19.834 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:22:19.967 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:21.465 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:21.590 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:22.777 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:28.649 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:29.854 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:29.994 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:30.827 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:22:30.923 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:32.493 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:32.747 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:34.092 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:42.193 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:43.727 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:43.905 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:45.071 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:22:45.240 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:46.570 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:46.715 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:47.867 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:53.847 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:55.228 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:55.324 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:56.261 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:22:56.383 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:22:57.481 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:22:57.572 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:22:58.199 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:03.671 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:04.437 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:04.533 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:05.298 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:05.364 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:05.993 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:06.072 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:06.568 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:12.594 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:13.696 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:13.824 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:14.889 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:15.013 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:15.999 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:16.041 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:16.594 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:21.988 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:22.708 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:22.749 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:23.258 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:23.303 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:23.951 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:24.008 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:24.585 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:30.163 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:30.501 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:30.549 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:30.997 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:31.042 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:31.474 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:31.509 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:31.925 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:37.250 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:37.747 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:37.793 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:38.176 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:38.209 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:38.597 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:38.642 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:39.141 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:44.388 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:45.200 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:45.279 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:46.124 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:23:46.234 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:23:47.452 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:47.582 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:23:48.457 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:23:51.257 INFO |cros_browser_backe:0157| Browser is up!
+07/11 22:23:54.038 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[226 processes]
+07/11 22:23:55.111 DEBUG|inspector_websocke:0117| sent [{
+  "id": 0, 
+  "method": "SystemInfo.getInfo"
+}]
+07/11 22:23:55.833 DEBUG|inspector_websocke:0188| got [{
+  "id": 0, 
+  "result": {
+    "commandLine": "/opt/google/chrome/chrome --use-gl=egl --gpu-sandbox-failures-fatal=no --enable-logging --log-level=1 --use-cras --enable-wayland-server --user-data-dir=/home/chronos --enable-features=SmartDim,Crostini,CrostiniGpuSupport --system-developer-mode --disable-logging-redirect --login-profile=user --aura-legacy-power-button --ozone-nnpalm-properties={} --arc-build-properties={} --enterprise-enrollment-initial-modulus=15 --enterprise-enrollment-modulus-limit=19 --login-manager --enable-net-benchmarking --metrics-recording-only --no-default-browser-check --no-first-run --ignore-background-tasks --enable-gpu-benchmarking --deny-permission-prompts --autoplay-policy=no-user-gesture-required --disable-component-extensions-with-background-pages --disable-default-apps --disable-search-geolocation-disclosure --trace-startup-owner=devtools --enable-smooth-scrolling --enable-threaded-compositing --remote-debugging-port=0 --start-maximized --ash-disable-system-sounds --oobe-skip-postlogin --enable-crash-reporter-for-testing --allow-failed-policy-fetch-for-test --disable-gaia-services --testing-channel=NamedTestingInterface:/tmp/.org.chromium.Chromium.WFcHcf/.org.chromium.Chromium.IHYQdW --no-enable-crashpad --vmodule=certificate_provider*=1,*/search_result_ranker/*=1,*night_light*=1,*/chrome/browser/chromeos/account_manager/*=1,*/chromeos/components/account_manager/*=1,app_list_syncable_service=1,*/chromeos/power/auto_screen_brightness/*=1,*/forced_extensions/installation_tracker*=2,extension_downloader=2,existing_user_controller=2,*/ash/wm/tablet_mode/*=1,enrollment_screen_handler=1,*/browser/chromeos/login/enrollment/*=1,*/ui/ozone/*=1,*/ui/display/manager/chromeos/*=1,update_engine=1,component_updater_service=1,*/chromeos/net/*=2,*/chromeos/login/*=2,chrome_browser_main_posix=2 --enable-features=SmartDim,Crostini,CrostiniGpuSupport --ui-compositor-memory-limit-when-visible-mb=512", 
+    "gpu": {
+      "auxAttributes": {
+        "amdSwitchable": false, 
+        "canSupportThreadedTextureMailbox": false, 
+        "directRenderingVersion": "", 
+        "glExtensions": "GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clamp GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_OES_texture_stencil8 GL_EXT_blend_func_extended GL_EXT_float_blend GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_compression_bptc GL_EXT_texture_sRGB_R8 GL_MESA_framebuffer_flip_y GL_EXT_depth_clamp GL_EXT_texture_query_lod ", 
+        "glRenderer": "llvmpipe (LLVM 9.0, 128 bits)", 
+        "glResetNotificationStrategy": 0, 
+        "glVendor": "VMware, Inc.", 
+        "glVersion": "OpenGL ES 3.0 Mesa 19.1.0-devel (git-b43b55d461)", 
+        "glWsExtensions": "EGL_EXT_image_dma_buf_import EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_image_dma_buf_export EGL_MESA_query_driver ", 
+        "glWsVendor": "Mesa Project", 
+        "glWsVersion": "1.4", 
+        "inProcessGpu": false, 
+        "initializationTime": 9.1579139999999999, 
+        "jpegDecodeAcceleratorSupported": false, 
+        "maxMsaaSamples": "1", 
+        "oopRasterizationSupported": true, 
+        "optimus": false, 
+        "passthroughCmdDecoder": false, 
+        "pixelShaderVersion": "3.00", 
+        "processCrashCount": 0, 
+        "sandboxed": false, 
+        "softwareRendering": false, 
+        "subpixelFontRendering": true, 
+        "vertexShaderVersion": "3.00", 
+        "videoDecodeAcceleratorFlags": 0
+      }, 
+      "devices": [
+        {
+          "deviceId": 4176, 
+          "deviceString": "llvmpipe (LLVM 9.0, 128 bits)", 
+          "driverVendor": "Mesa", 
+          "driverVersion": "19.1.0", 
+          "vendorId": 6900, 
+          "vendorString": "VMware, Inc."
+        }
+      ], 
+      "driverBugWorkarounds": [
+        "clear_uniforms_before_first_program_use", 
+        "count_all_in_varyings_packing", 
+        "scalarize_vec_and_mat_constructor_args", 
+        "disabled_extension_GL_KHR_blend_equation_advanced", 
+        "disabled_extension_GL_KHR_blend_equation_advanced_coherent"
+      ], 
+      "featureStatus": {
+        "2d_canvas": "enabled", 
+        "flash_3d": "enabled", 
+        "flash_stage3d": "enabled", 
+        "flash_stage3d_baseline": "enabled", 
+        "gpu_compositing": "enabled", 
+        "multiple_raster_threads": "enabled_on", 
+        "oop_rasterization": "unavailable_off", 
+        "opengl": "enabled_on", 
+        "protected_video_decode": "unavailable_off", 
+        "rasterization": "unavailable_off", 
+        "skia_renderer": "disabled_off_ok", 
+        "video_decode": "enabled", 
+        "vulkan": "disabled_off", 
+        "webgl": "enabled", 
+        "webgl2": "enabled"
+      }, 
+      "imageDecoding": [], 
+      "videoDecoding": [], 
+      "videoEncoding": []
+    }, 
+    "modelName": "", 
+    "modelVersion": ""
+  }
+}]
+07/11 22:23:56.107 INFO |           browser:0135| Browser information:
+ Browser started (pid=5896).
+ OS: chromeos 
+ Browser command line: /opt/google/chrome/chrome --use-gl=egl --gpu-sandbox-failures-fatal=no --enable-logging --log-level=1 --use-cras --enable-wayland-server --user-data-dir=/home/chronos --enable-features=SmartDim,Crostini,CrostiniGpuSupport --system-developer-mode --disable-logging-redirect --login-profile=user --aura-legacy-power-button --ozone-nnpalm-properties={} --arc-build-properties={} --enterprise-enrollment-initial-modulus=15 --enterprise-enrollment-modulus-limit=19 --login-manager --enable-net-benchmarking --metrics-recording-only --no-default-browser-check --no-first-run --ignore-background-tasks --enable-gpu-benchmarking --deny-permission-prompts --autoplay-policy=no-user-gesture-required --disable-component-extensions-with-background-pages --disable-default-apps --disable-search-geolocation-disclosure --trace-startup-owner=devtools --enable-smooth-scrolling --enable-threaded-compositing --remote-debugging-port=0 --start-maximized --ash-disable-system-sounds --oobe-skip-postlogin --enable-crash-reporter-for-testing --allow-failed-policy-fetch-for-test --disable-gaia-services --testing-channel=NamedTestingInterface:/tmp/.org.chromium.Chromium.WFcHcf/.org.chromium.Chromium.IHYQdW --no-enable-crashpad --vmodule=certificate_provider*=1,*/search_result_ranker/*=1,*night_light*=1,*/chrome/browser/chromeos/account_manager/*=1,*/chromeos/components/account_manager/*=1,app_list_syncable_service=1,*/chromeos/power/auto_screen_brightness/*=1,*/forced_extensions/installation_tracker*=2,extension_downloader=2,existing_user_controller=2,*/ash/wm/tablet_mode/*=1,enrollment_screen_handler=1,*/browser/chromeos/login/enrollment/*=1,*/ui/ozone/*=1,*/ui/display/manager/chromeos/*=1,update_engine=1,component_updater_service=1,*/chromeos/net/*=2,*/chromeos/login/*=2,chrome_browser_main_posix=2 --enable-features=SmartDim,Crostini,CrostiniGpuSupport --ui-compositor-memory-limit-when-visible-mb=512
+ GPU device 0: VENDOR = 0x1af4 (VMware, Inc.), DEVICE = 0x1050 (llvmpipe (LLVM 9.0, 128 bits)), DRIVER_VENDOR = Mesa, DRIVER_VERSION = 19.1.0
+ GPU Attributes:
+  amd_switchable      : False
+  can_support_threaded_texture_mailbox: False
+  direct_rendering_version: 
+  gl_extensions       : GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_float_linear GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_EXT_texture_sRGB_decode GL_OES_EGL_image GL_OES_depth_texture GL_OES_packed_depth_stencil GL_EXT_texture_type_2_10_10_10_REV GL_NV_conditional_render GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_texture_rg GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_KHR_texture_compression_astc_ldr GL_OES_depth_texture_cube_map GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_color_buffer_float GL_EXT_sRGB_write_control GL_EXT_separate_shader_objects GL_EXT_shader_integer_mix GL_EXT_base_instance GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_copy_image GL_EXT_draw_buffers_indexed GL_EXT_draw_elements_base_vertex GL_EXT_polygon_offset_clamp GL_EXT_texture_border_clamp GL_KHR_context_flush_control GL_OES_copy_image GL_OES_draw_buffers_indexed GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_OES_texture_stencil8 GL_EXT_blend_func_extended GL_EXT_float_blend GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_OES_EGL_image_external_essl3 GL_EXT_clip_cull_distance GL_EXT_disjoint_timer_query GL_EXT_texture_compression_s3tc_srgb GL_MESA_shader_integer_functions GL_EXT_texture_compression_bptc GL_EXT_texture_sRGB_R8 GL_MESA_framebuffer_flip_y GL_EXT_depth_clamp GL_EXT_texture_query_lod 
+  gl_renderer         : llvmpipe (LLVM 9.0, 128 bits)
+  gl_reset_notification_strategy: 0
+  gl_vendor           : VMware, Inc.
+  gl_version          : OpenGL ES 3.0 Mesa 19.1.0-devel (git-b43b55d461)
+  gl_ws_extensions    : EGL_EXT_image_dma_buf_import EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_image_dma_buf_export EGL_MESA_query_driver 
+  gl_ws_vendor        : Mesa Project
+  gl_ws_version       : 1.4
+  in_process_gpu      : False
+  initialization_time : 9.157914
+  jpeg_decode_accelerator_supported: False
+  max_msaa_samples    : 1
+  oop_rasterization_supported: True
+  optimus             : False
+  passthrough_cmd_decoder: False
+  pixel_shader_version: 3.00
+  process_crash_count : 0
+  sandboxed           : False
+  software_rendering  : False
+  subpixel_font_rendering: True
+  vertex_shader_version: 3.00
+  video_decode_accelerator_flags: 0
+ Feature Status:
+  2d_canvas           : enabled
+  flash_3d            : enabled
+  flash_stage3d       : enabled
+  flash_stage3d_baseline: enabled
+  gpu_compositing     : enabled
+  multiple_raster_threads: enabled_on
+  oop_rasterization   : unavailable_off
+  opengl              : enabled_on
+  protected_video_decode: unavailable_off
+  rasterization       : unavailable_off
+  skia_renderer       : disabled_off_ok
+  video_decode        : enabled
+  vulkan              : disabled_off
+  webgl               : enabled
+  webgl2              : enabled
+ Driver Bug Workarounds:
+  clear_uniforms_before_first_program_use
+  count_all_in_varyings_packing
+  scalarize_vec_and_mat_constructor_args
+  disabled_extension__gl__khr_blend_equation_advanced
+  disabled_extension__gl__khr_blend_equation_advanced_coherent
+07/11 22:23:59.840 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[226 processes]
+07/11 22:24:00.502 DEBUG|          base_job:0357| Persistent state public.client_success now set to True
+07/11 22:24:04.090 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[226 processes]
+07/11 22:24:05.556 DEBUG|    cros_interface:0482| ListProcesses(<predicate>)->[227 processes]
+07/11 22:24:05.653 INFO |           browser:0143| Closing browser (pid=5896) ...
+07/11 22:24:05.783 INFO |    cros_interface:0744| (Re)starting the ui (logs the user out)
+07/11 22:24:07.588 DEBUG|    cros_interface:0558| IsServiceRunning(ui)->True
+07/11 22:24:07.691 DEBUG|          cmd_util:0049| sh -c restart ui 
+07/11 22:24:47.662 DEBUG|          cmd_util:0058|  > stdout=[ui start/running, process 7130
+], stderr=[]
+07/11 22:24:47.741 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:24:48.483 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:24:48.526 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:24:48.922 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[df: /run/cryptohome/ephemeral_mount/dee72bc21c7d9b5cf3e43a698213e709dc506224: No such file or directory
+]
+07/11 22:24:48.967 DEBUG|          cmd_util:0049| sh -c cryptohome-path user 'test@test.test' 
+07/11 22:24:49.700 DEBUG|          cmd_util:0058|  > stdout=[/home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224
+], stderr=[]
+07/11 22:24:49.801 DEBUG|          cmd_util:0049| sh -c /bin/df --output=source,target /home/user/dee72bc21c7d9b5cf3e43a698213e709dc506224 
+07/11 22:24:50.500 DEBUG|          cmd_util:0058|  > stdout=[Filesystem     Mounted on
+/dev/sda1      /home
+], stderr=[]
+07/11 22:24:50.619 INFO |           browser:0157| Browser is closed.
+07/11 22:24:50.702 DEBUG|    cros_interface:0529| rm -rf '/var/log/chrome/Crash Reports/'
+07/11 22:24:51.482 DEBUG|          cmd_util:0049| sh -c mv /tmp/existing_minidumps_b21683a1 '/var/log/chrome/Crash Reports/' 
+07/11 22:24:52.314 DEBUG|          cmd_util:0058|  > stdout=[], stderr=[]
+07/11 22:24:52.482 DEBUG|              test:0378| The test has completed successfully
+07/11 22:24:52.960 DEBUG|              test:0392| Starting after_iteration_hooks for login_LoginSuccess
+07/11 22:24:53.053 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/interrupts.after
+07/11 22:24:53.124 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/meminfo.after
+07/11 22:24:53.213 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/slabinfo.after
+07/11 22:24:53.297 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/var/spool'
+07/11 22:24:54.431 DEBUG|             utils:0219| Running 'rsync --no-perms --chmod=ugo+r -a --safe-links --exclude=/crash/**autoserv* --exclude=/crash/**.journal --exclude=/crash/*.core /var/spool/crash /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/var/spool'
+07/11 22:24:56.625 DEBUG|             utils:0219| Running 'rm -rf /var/spool/crash/*'
+07/11 22:24:58.119 DEBUG|      base_sysinfo:0127| Loggable saves logs to /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1/schedstat.after
+07/11 22:24:58.191 DEBUG|             utils:0219| Running 'logger "autotest finished iteration /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/iteration.1"'
+07/11 22:24:59.125 DEBUG|              test:0397| after_iteration_hooks completed
+07/11 22:24:59.182 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/11 22:24:59.293 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/11 22:24:59.892 INFO |              test:0844| Starting after_hook for login_LoginSuccess
+07/11 22:25:00.221 DEBUG|      base_sysinfo:0180| Loggable runs cmd: journalctl -o export -c "s=35e1e01970c24a929fd2ca6069bf8529;i=12ded;b=6c94d87d8d934812a5b79d86400fbd0f;m=bdb10ca4;t=5aa37a39db021;x=52b905d8cabb08b8" | gzip -9
+07/11 22:25:12.524 DEBUG|             utils:0219| Running 'mkdir -p /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/var/spool'
+07/11 22:25:13.308 DEBUG|             utils:0219| Running 'rsync --no-perms --chmod=ugo+r -a --safe-links --exclude=/crash/**autoserv* --exclude=/crash/**.journal --exclude=/crash/*.core /var/spool/crash /usr/local/autotest/results/default/login_LoginSuccess/sysinfo/var/spool'
+07/11 22:25:14.268 DEBUG|             utils:0219| Running 'rm -rf /var/spool/crash/*'
+07/11 22:25:15.585 DEBUG|      base_sysinfo:0180| Loggable runs cmd: dmesg -c | gzip -9
+07/11 22:25:16.820 DEBUG|      base_sysinfo:0180| Loggable runs cmd: df -mP
+07/11 22:25:18.338 DEBUG|             utils:0219| Running 'grep MemTotal /proc/meminfo'
+07/11 22:25:19.586 DEBUG|             utils:0219| Running 'cat /etc/lsb-release'
+07/11 22:25:20.794 DEBUG|             utils:0219| Running 'crossystem hwid'
+07/11 22:25:21.690 DEBUG|             utils:0219| Running 'crossystem mainfw_type'
+07/11 22:25:22.601 INFO |      site_sysinfo:0426| HWID not available; not logging it as a test keyval.
+07/11 22:25:22.693 DEBUG|             utils:0219| Running '/opt/google/chrome/chrome --version'
+07/11 22:25:26.839 DEBUG|             utils:0219| Running '/usr/sbin/cryptohome --action=tpm_more_status | grep : 2>&1'
+07/11 22:25:44.331 DEBUG|             utils:0287| [stdout]   enabled: false
+07/11 22:25:44.420 DEBUG|             utils:0287| [stdout]   owned: false
+07/11 22:25:44.463 DEBUG|             utils:0287| [stdout]   initialized: false
+07/11 22:25:44.483 DEBUG|             utils:0287| [stdout]   attestation_prepared: false
+07/11 22:25:44.504 DEBUG|             utils:0287| [stdout]   attestation_enrolled: false
+07/11 22:25:44.529 DEBUG|             utils:0287| [stdout]   install_lockbox_finalized: false
+07/11 22:25:44.557 DEBUG|             utils:0287| [stdout]   boot_lockbox_finalized: false
+07/11 22:25:44.579 DEBUG|             utils:0287| [stdout]   verified_boot_measured: false
+07/11 22:25:44.603 DEBUG|             utils:0287| [stdout]   is_locked_to_single_user: false
+07/11 22:25:46.336 INFO |              test:0848| after_hook completed
+07/11 22:25:46.718 INFO |               job:0515| pid 5519 completed
+07/11 22:25:47.387 INFO |               job:0232| 		GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531546	localtime=Jul 11 22:25:46	completed successfully
+07/11 22:25:48.065 INFO |               job:0232| 	END GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531547	localtime=Jul 11 22:25:47	
+07/11 22:25:48.902 DEBUG|          base_job:0357| Persistent state client._record_indent now set to 1
+07/11 22:25:49.293 DEBUG|          base_job:0384| Persistent state client.unexpected_reboot deleted
+07/11 22:26:18.662 DEBUG|             utils:0219| Running 'rm -f /var/lib/cleanup_logs_paused'
+07/11 22:26:21.652 INFO |               job:0232| END GOOD	----	----	timestamp=1594531581	localtime=Jul 11 22:26:21	
+07/11 22:26:22.710 DEBUG|          base_job:0357| Persistent state client._record_indent now set to 0
+07/11 22:26:27.828 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/11 22:26:27.844 DEBUG|   logging_manager:0634| Logging subprocess finished

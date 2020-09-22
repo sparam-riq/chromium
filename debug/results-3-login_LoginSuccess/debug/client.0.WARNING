@@ -1,0 +1,1 @@
+22:13:35.117 WARNI|  external_modules:0061| Unable to import cv2 due to: cv2 has version 4.1.2, but version at or above 2.4.8 and below 3.0.0 is required

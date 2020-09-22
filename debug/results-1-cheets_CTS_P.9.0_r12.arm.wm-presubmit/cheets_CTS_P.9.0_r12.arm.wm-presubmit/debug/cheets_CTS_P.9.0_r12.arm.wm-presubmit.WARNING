@@ -1,0 +1,29 @@
+07/12 04:26:37.860 WARNI|              test:0612| The test failed with the following exception
+Traceback (most recent call last):
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/test.py", line 573, in _exec
+    utils.cherry_pick_call(self.initialize, *args, **dargs)
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/utils.py", line 3197, in cherry_pick_call
+    return func(*p_args, **p_dargs)
+  File "/build/amd64-generic/usr/local/build/autotest/server/site_tests/cheets_CTS_P/cheets_CTS_P.py", line 137, in initialize
+    hard_reboot_on_failure=hard_reboot_on_failure)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 146, in initialize
+    uri or self._get_default_bundle_url(bundle))
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 664, in _install_bundle
+    cache_path = self._download_to_cache(gs_uri)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 549, in _download_to_cache
+    return self._download_to_dir(uri, output_dir)
+  File "/build/amd64-generic/usr/local/build/autotest/server/cros/tradefed/tradefed_test.py", line 591, in _download_to_dir
+    utils.run('gsutil', args=('cp', uri, output), verbose=True)
+  File "/build/amd64-generic/usr/local/build/autotest/client/common_lib/utils.py", line 761, in run
+    "Command returned non-zero exit status")
+CmdError: Command <gsutil cp 'gs://chromeos-arc-images/cts/bundle/P/android-cts-9.0_r12-linux_x86-arm.zip' '/tmp/autotest-tradefed-cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-cts-9.0_r12-linux_x86-arm.zip'> failed, rc=1, Command returned non-zero exit status
+* Command: 
+    gsutil cp 'gs://chromeos-arc-images/cts/bundle/P/android-
+    cts-9.0_r12-linux_x86-arm.zip' '/tmp/autotest-tradefed-
+    cache/cache/f3abd701665ebb30a6329ef7516dd4c8/android-
+    cts-9.0_r12-linux_x86-arm.zip'
+Exit status: 1
+Duration: 1.26539111137
+
+stderr:
+AccessDeniedException: 403 sgouda@gmail.com does not have storage.objects.list access to the Google Cloud Storage bucket.

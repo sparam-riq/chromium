@@ -1,0 +1,298 @@
+07/12 05:10:16.077 DEBUG|          autoserv:0733| autoserv is running in drone chromebuild.
+07/12 05:10:16.077 DEBUG|          autoserv:0734| autoserv environment: {'LESS': '-R -M --shift 5', 'LESSOPEN': '|lesspipe %s', 'LOGNAME': 'sgouda', 'USER': 'sgouda', 'PATH': '/usr/local/bin:/usr/bin:/bin:/opt/bin:/mnt/host/source/chromite/bin:/mnt/host/depot_tools', 'HOME': '/home/sgouda', 'GCC_VER': '4.9.x', 'SSH_AGENT_PID': '303', 'LANG': 'en_US.UTF-8', 'INFOPATH': '/usr/share/info:/usr/share/gcc-data/x86_64-pc-linux-gnu/4.9.x/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.27.0/info', 'TERM': 'cygwin', 'SHELL': '/bin/bash', 'JDK_HOME': '/etc/java-config-2/current-system-vm', 'SHLVL': '2', 'CONFIG_PROTECT_MASK': '/etc/gentoo-release /etc/sandbox.d /etc/fonts/fonts.conf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild', 'BUILDBOT_BUILD': '', 'EXTERNAL_TRUNK_PATH': '/home/sgouda/chromiumos', 'CHROMEOS_RELEASE_APPID': '{DEV-BUILD}', 'EDITOR': '/usr/bin/vi', 'MANPATH': '/etc/java-config-2/current-system-vm/man:/usr/local/share/man:/usr/share/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/4.9.x/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.27.0/man:/etc/java-config-2/current-system-vm/man/', 'SUDO_USER': 'root', 'JAVA_HOME': '/etc/java-config-2/current-system-vm', 'CHROMEOS_CACHEDIR': '/var/cache/chromeos-cache', 'CHROOT_CWD': '', 'SSH_AUTH_SOCK': '/tmp/ssh-uhgHGQPvWeCi/agent.302', 'SUDO_UID': '0', 'GCC_SPECS': '', 'MANPAGER': 'manpager', 'NO_GCE_CHECK': 'False', 'CROS_WORKON_SRCROOT': '/mnt/host/source', '_': '/usr/bin/ssh-agent', 'XAUTHORITY': '/home/chronos/.Xauthority', 'SUDO_COMMAND': '/bin/bash -c cros_run_vm_test --board=amd64-generic --results-dir=results --autotest suite:smoke', 'SUDO_GID': '0', 'LC_MESSAGES': 'C', 'JAVAC': '/etc/java-config-2/current-system-vm/bin/javac', 'PORTAGE_USERNAME': 'sgouda', 'PWD': '/home/sgouda/trunk/src/scripts', 'DJANGO_SETTINGS_MODULE': 'autotest_lib.frontend.settings', 'MAIL': '/var/mail/sgouda', 'PAGER': '/usr/bin/less'}
+07/12 05:10:16.078 DEBUG|          autoserv:0735| autoserv command was: /build/amd64-generic/usr/local/build/autotest/server/autoserv -p -r /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess --local-only-host-info True --host-info-subdir host_info_store -m localhost:9222 --ssh_options -F /dev/null -i /dev/null --no_console_prefix -u autotest_system -l ad_hoc_build/ad_hoc_suite/login_LoginSuccess -c --no_use_packaging /tmp/tmpRTrtC4 --args  servo_host=localhost servo_port=9999
+07/12 05:10:16.078 DEBUG|          autoserv:0736| autoserv parsed options: Namespace(args=' servo_host=localhost servo_port=9999', cleanup=False, client=True, cloud_trace_context='', cloud_trace_context_enabled='False', collect_crashinfo=False, control_filename=None, control_name=None, disable_sysinfo=False, execution_tag='', group_name='', host_attributes={}, host_info_subdir='host_info_store', install_in_tmpdir=False, isolate='', job_labels=None, lab='', label='ad_hoc_build/ad_hoc_suite/login_LoginSuccess', local_only_host_info=True, machines='localhost:9222', machines_file=None, no_console_prefix=True, no_logging=False, no_tee=False, no_use_packaging=True, parent_job_id=None, parse_job='', pidfile_label='autoserv', provision=False, repair=False, require_ssp=False, reset=False, results='/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess', server=False, skip_crash_collection=False, ssh_options='-F /dev/null -i /dev/null', ssh_pass='', ssh_port=22, ssh_user='root', ssh_verbosity=0, sync_offload_dir='', test_source_build='', use_existing_results=False, user='autotest_system', verbose=False, verify=False, verify_job_repo_url=False, write_pidfile=True)
+07/12 05:10:16.078 INFO |          autoserv:0744| Results placed in /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess
+07/12 05:10:16.078 INFO |           pidfile:0016| Logged pid 1164 to /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/.autoserv_execute
+07/12 05:10:16.079 DEBUG|          autoserv:0502| Parser.args is ['/tmp/tmpRTrtC4', 'servo_host=localhost', 'servo_port=9999']
+07/12 05:10:16.080 DEBUG|          autoserv:0504| Parser.options.args is ' servo_host=localhost servo_port=9999'
+07/12 05:10:16.080 DEBUG|          autoserv:0509| Parser.options is Namespace(args=' servo_host=localhost servo_port=9999', cleanup=False, client=True, cloud_trace_context='', cloud_trace_context_enabled='False', collect_crashinfo=False, control_filename=None, control_name=None, disable_sysinfo=False, execution_tag='', group_name='', host_attributes={}, host_info_subdir='host_info_store', install_in_tmpdir=False, isolate='', job_labels=None, lab='', label='ad_hoc_build/ad_hoc_suite/login_LoginSuccess', local_only_host_info=True, machines='localhost:9222', machines_file=None, no_console_prefix=True, no_logging=False, no_tee=False, no_use_packaging=True, parent_job_id=None, parse_job='', pidfile_label='autoserv', provision=False, repair=False, require_ssp=False, reset=False, results='/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess', server=False, skip_crash_collection=False, ssh_options='-F /dev/null -i /dev/null', ssh_pass='', ssh_port=22, ssh_user='root', ssh_verbosity=0, sync_offload_dir='', test_source_build='', use_existing_results=False, user='autotest_system', verbose=False, verify=False, verify_job_repo_url=False, write_pidfile=True)
+07/12 05:10:16.080 DEBUG|         host_info:0302| Committing HostInfo to store InMemoryHostInfoStore[HostInfo[Labels: [], Attributes: {}, StableVersions: {}]]
+07/12 05:10:16.080 DEBUG|         host_info:0306| HostInfo updated to: HostInfo[Labels: [], Attributes: {}, StableVersions: {}]
+07/12 05:10:16.081 DEBUG|          base_job:0357| Persistent state global_properties.tag now set to ''
+07/12 05:10:16.084 DEBUG|          base_job:0357| Persistent state global_properties.fast now set to False
+07/12 05:10:16.084 DEBUG|          base_job:0357| Persistent state global_properties.max_result_size_KB now set to 40000
+07/12 05:10:16.105 INFO |    connectionpool:0207| Starting new HTTP connection (1): metadata.google.internal
+07/12 05:10:16.107 INFO |            config:0022| Configuration file does not exist, ignoring: /etc/chrome-infra/ts-mon.json
+07/12 05:10:16.107 INFO |            config:0239| ts_mon monitoring has been explicitly disabled
+07/12 05:10:16.107 NOTIC|      cros_logging:0070| ts_mon was set up.
+07/12 05:10:16.121 INFO |        server_job:0732| I am PID 1164
+07/12 05:10:16.138 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:16.209 DEBUG|          ssh_host:0324| Running (ssh) 'test :' from 'parallel_simple|get_network_stats|create_target_machine|create_host|_verify_connectivity|run_very_slowly'
+07/12 05:10:16.214 INFO |     ssh_multiplex:0095| Starting master ssh connection '/usr/bin/ssh -a -x -N -o ControlMaster=yes -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -o Protocol=2 -l root -p 9222 localhost'
+07/12 05:10:16.214 DEBUG|             utils:0219| Running '/usr/bin/ssh -a -x -N -o ControlMaster=yes -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -o Protocol=2 -l root -p 9222 localhost'
+07/12 05:10:20.389 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:20.389 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:10:20.398 DEBUG|          ssh_host:0324| Running (ssh) 'grep -q CHROMEOS /etc/lsb-release && ! grep -q moblab /etc/lsb-release && ! grep -q labstation /etc/lsb-release' from 'get_network_stats|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:10:22.270 DEBUG|          ssh_host:0324| Running (ssh) 'grep CHROMEOS_RELEASE_BOARD /etc/lsb-release' from 'get_network_stats|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:10:23.591 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 05:10:23.633 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:23.634 DEBUG|        servo_host:1414| No servo_args provided, and failed to find overrides.
+07/12 05:10:23.634 DEBUG|         cros_host:1109| Servo is not initialized to get servo_type.
+07/12 05:10:23.648 DEBUG|             utils:2015| Checking if host localhost-chameleon.cros.corp.google.com is in lab zone.
+07/12 05:10:23.662 DEBUG|             utils:2015| Checking if host localhost.cros.corp.google.com is in lab zone.
+07/12 05:10:23.663 DEBUG|         cros_host:0400| Bluetooth peer hosts are  []
+07/12 05:10:23.663 DEBUG|         cros_host:0410| After initialize_btpeer btpeer_list [] btpeer_host_list is [] and btpeer is None
+07/12 05:10:23.672 DEBUG|          ssh_host:0324| Running (ssh) 'test ! -e /var/log/messages || cp -f /var/log/messages /var/tmp/messages.autotest_start' from 'parallel_simple|get_network_stats|create_target_machine|create_host|job_start|run_very_slowly'
+07/12 05:10:25.517 DEBUG|             utils:0219| Running 'ping localhost -c1'
+07/12 05:10:25.531 DEBUG|             utils:1993| [rc=0] 1 packets transmitted, 1 received, 0% packet loss, time 0ms; rtt min/avg/max/mdev = 0.014/0.014/0.014/0.000 ms
+07/12 05:10:25.542 DEBUG|          ssh_host:0324| Running (ssh) 'route; echo SEPARATOR; cat /proc/net/dev' from '_execute_code|<module>|parallel_simple|parallel_simple|get_network_stats|run_very_slowly'
+07/12 05:10:27.790 DEBUG|             utils:0287| [stdout] Kernel IP routing table
+07/12 05:10:27.790 DEBUG|             utils:0287| [stdout] Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+07/12 05:10:27.790 DEBUG|             utils:0287| [stdout] 10.0.2.0        0.0.0.0         255.255.255.224 U     0      0        0 eth0
+07/12 05:10:27.800 DEBUG|             utils:0287| [stdout] SEPARATOR
+07/12 05:10:28.104 DEBUG|             utils:0287| [stdout] Inter-|   Receive                                                |  Transmit
+07/12 05:10:28.104 DEBUG|             utils:0287| [stdout]  face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+07/12 05:10:28.104 DEBUG|             utils:0287| [stdout]   eth0: 35700161   28820    0    0    0     0          0         0  2987458    9646    0    0    0     0       0          0
+07/12 05:10:28.104 DEBUG|             utils:0287| [stdout]     lo: 1378340   27566    0    0    0     0          0         0  1378340   27566    0    0    0     0       0          0
+07/12 05:10:28.146 INFO | get_network_stats:0040| get_network_stats: no default interface
+07/12 05:10:28.147 WARNI|        server_job:0803| Not checking if job_repo_url contains autotest packages on ['localhost:9222']
+07/12 05:10:28.147 INFO |        server_job:0833| Processing control file
+07/12 05:10:28.148 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:28.157 DEBUG|          ssh_host:0324| Running (ssh) 'test :' from 'parallel_simple|parallel_simple|run_client|create_host|_verify_connectivity|run_very_slowly'
+07/12 05:10:29.059 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:29.060 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:10:29.069 DEBUG|          ssh_host:0324| Running (ssh) 'grep -q CHROMEOS /etc/lsb-release && ! grep -q moblab /etc/lsb-release && ! grep -q labstation /etc/lsb-release' from 'parallel_simple|run_client|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:10:30.962 DEBUG|          ssh_host:0324| Running (ssh) 'grep CHROMEOS_RELEASE_BOARD /etc/lsb-release' from 'parallel_simple|run_client|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:10:32.426 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 05:10:32.501 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:10:32.501 DEBUG|        servo_host:1414| No servo_args provided, and failed to find overrides.
+07/12 05:10:32.501 DEBUG|         cros_host:1109| Servo is not initialized to get servo_type.
+07/12 05:10:32.515 DEBUG|             utils:2015| Checking if host localhost-chameleon.cros.corp.google.com is in lab zone.
+07/12 05:10:32.530 DEBUG|             utils:2015| Checking if host localhost.cros.corp.google.com is in lab zone.
+07/12 05:10:32.530 DEBUG|         cros_host:0400| Bluetooth peer hosts are  []
+07/12 05:10:32.530 DEBUG|         cros_host:0410| After initialize_btpeer btpeer_list [] btpeer_host_list is [] and btpeer is None
+07/12 05:10:32.539 DEBUG|          ssh_host:0324| Running (ssh) 'ls /bin/uname >/dev/null 2>&1' from 'parallel_simple|run_client|log_kernel|get_kernel_ver|must_be_installed|run_very_slowly'
+07/12 05:10:33.868 DEBUG|          ssh_host:0324| Running (ssh) '/bin/uname -r' from 'parallel_simple|parallel_simple|run_client|log_kernel|get_kernel_ver|run_very_slowly'
+07/12 05:10:35.064 DEBUG|             utils:0287| [stdout] 4.14.187-15968-g08a7c30a896d
+07/12 05:10:35.112 INFO |        server_job:0222| INFO	----	----	kernel=4.14.187-15968-g08a7c30a896d	localtime=Jul 12 05:10:35	timestamp=1594530635	
+07/12 05:10:35.120 DEBUG|          ssh_host:0324| Running (ssh) 'true' from 'install|_install|wait_up|is_up|ssh_ping|run_very_slowly'
+07/12 05:10:36.147 DEBUG|      abstract_ssh:0696| Host localhost:9222 is now up
+07/12 05:10:36.147 INFO |          autotest:0339| Installing autotest on localhost
+07/12 05:10:36.155 DEBUG|          ssh_host:0324| Running (ssh) 'test -x /usr/local/autotest/bin/autotest' from '_get_host_and_setup|install|_install|get_install_dir|get_installed_autodir|run_very_slowly'
+07/12 05:10:37.236 DEBUG|          ssh_host:0324| Running (ssh) 'test -w /usr/local/autotest' from '_get_host_and_setup|install|_install|get_install_dir|get_installed_autodir|run_very_slowly'
+07/12 05:10:38.158 DEBUG|          autotest:0139| Found existing autodir at /usr/local/autotest
+07/12 05:10:38.158 INFO |          autotest:0344| Using installation dir /usr/local/autotest
+07/12 05:10:38.167 DEBUG|          ssh_host:0324| Running (ssh) 'mkdir -p /usr/local/autotest' from 'run_client|run|_get_host_and_setup|install|_install|run_very_slowly'
+07/12 05:10:39.517 DEBUG|          ssh_host:0324| Running (ssh) 'rm -rf /usr/local/autotest/results/*' from 'run_client|run|_get_host_and_setup|install|_install|run_very_slowly'
+07/12 05:10:42.018 DEBUG|          ssh_host:0324| Running (ssh) 'rm -f "/usr/local/autotest/packages.checksum"' from 'run_client|run|_get_host_and_setup|install|_install|run_very_slowly'
+07/12 05:10:43.142 DEBUG|      abstract_ssh:0539| send_file. source: ['/build/amd64-generic/usr/local/build/autotest/client/LICENSE', '/build/amd64-generic/usr/local/build/autotest/client/setup_modules.py', '/build/amd64-generic/usr/local/build/autotest/client/bin', '/build/amd64-generic/usr/local/build/autotest/client/tools', '/build/amd64-generic/usr/local/build/autotest/client/__init__.pyc', '/build/amd64-generic/usr/local/build/autotest/client/setup_modules_unittest.py', '/build/amd64-generic/usr/local/build/autotest/client/__init__.py', '/build/amd64-generic/usr/local/build/autotest/client/build_deps', '/build/amd64-generic/usr/local/build/autotest/client/setup_modules.pyc', '/build/amd64-generic/usr/local/build/autotest/client/cros', '/build/amd64-generic/usr/local/build/autotest/client/common_lib', '/build/amd64-generic/usr/local/build/autotest/client/samples', '/build/amd64-generic/usr/local/build/autotest/client/config'], dest: /usr/local/autotest, delete_dest: True,preserve_symlinks:False
+07/12 05:10:43.149 DEBUG|          ssh_host:0324| Running (ssh) 'rsync --version' from '_install|_install_using_send_file|send_file|use_rsync|check_rsync|run_very_slowly'
+07/12 05:10:44.544 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:10:44.544 DEBUG|             utils:0219| Running 'rsync -L --delete --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/build/amd64-generic/usr/local/build/autotest/client/LICENSE" "/build/amd64-generic/usr/local/build/autotest/client/setup_modules.py" "/build/amd64-generic/usr/local/build/autotest/client/bin" "/build/amd64-generic/usr/local/build/autotest/client/tools" "/build/amd64-generic/usr/local/build/autotest/client/__init__.pyc" "/build/amd64-generic/usr/local/build/autotest/client/setup_modules_unittest.py" "/build/amd64-generic/usr/local/build/autotest/client/__init__.py" "/build/amd64-generic/usr/local/build/autotest/client/build_deps" "/build/amd64-generic/usr/local/build/autotest/client/setup_modules.pyc" "/build/amd64-generic/usr/local/build/autotest/client/cros" "/build/amd64-generic/usr/local/build/autotest/client/common_lib" "/build/amd64-generic/usr/local/build/autotest/client/samples" "/build/amd64-generic/usr/local/build/autotest/client/config" "root@localhost:"/usr/local/autotest""'
+07/12 05:10:48.993 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from '_get_host_and_setup|install|_install|_install_using_send_file|send_file|run_very_slowly'
+07/12 05:10:51.475 DEBUG|          ssh_host:0324| Running (ssh) 'mkdir -p '/usr/local/autotest/site_tests';touch '/usr/local/autotest/site_tests'/__init__.py;mkdir -p '/usr/local/autotest/tests';touch '/usr/local/autotest/tests'/__init__.py;mkdir -p '/usr/local/autotest/packages';touch '/usr/local/autotest/packages'/__init__.py;mkdir -p '/usr/local/autotest/deps';touch '/usr/local/autotest/deps'/__init__.py;mkdir -p '/usr/local/autotest/profilers';touch '/usr/local/autotest/profilers'/__init__.py' from 'run|_get_host_and_setup|install|_install|_install_using_send_file|run_very_slowly'
+07/12 05:10:55.744 INFO |          autotest:0382| Installation of autotest completed from /build/amd64-generic/usr/local/build/autotest/client/
+07/12 05:10:55.745 INFO |          autotest:0410| Installing updated global_config.ini.
+07/12 05:10:55.745 DEBUG|      abstract_ssh:0539| send_file. source: /tmp/tmps_sLKg, dest: /usr/local/autotest/global_config.ini, delete_dest: False,preserve_symlinks:False
+07/12 05:10:55.746 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:10:55.746 DEBUG|             utils:0219| Running 'rsync -L  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/tmp/tmps_sLKg" "root@localhost:"/usr/local/autotest/global_config.ini""'
+07/12 05:10:57.124 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from '_get_host_and_setup|install|_install|_send_shadow_config|send_file|run_very_slowly'
+07/12 05:10:58.969 DEBUG|          ssh_host:0324| Running (ssh) '/usr/local/autotest/bin/fs_sync.py' from 'run_client|run|_get_host_and_setup|install|_install|run_very_slowly'
+07/12 05:11:06.659 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:06,257 INFO | + ls /dev/mmcblk? /dev/nvme?n? /dev/sd? | sort -r
+07/12 05:11:07.432 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:07,077 DEBUG|     stdout: '/dev/sda\n'
+07/12 05:11:07.443 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:07,105 DEBUG|     stderr: "ls: cannot access '/dev/mmcblk?': No such file or directory\nls: cannot access '/dev/nvme?n?': No such file or directory\n"
+07/12 05:11:07.454 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:07,117 DEBUG|     rc: 0
+07/12 05:11:07.472 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:07,139 INFO | Syncing device(s): /dev/sda
+07/12 05:11:07.477 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:07,146 INFO | + sync && sync
+07/12 05:11:09.018 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:08,640 DEBUG|     rc: 0
+07/12 05:11:09.070 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:08,734 INFO | + blockdev --flushbufs /dev/mapper/encstateful
+07/12 05:11:09.875 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:09,488 DEBUG|     rc: 0
+07/12 05:11:09.927 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:09,550 INFO | + blockdev --flushbufs /dev/sda*
+07/12 05:11:10.929 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:10,530 DEBUG|     rc: 0
+07/12 05:11:10.968 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:10,619 INFO | + hdparm --verbose -f /dev/sda
+07/12 05:11:13.326 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:12,948 DEBUG|     stdout: '\n/dev/sda:\nAPT: No idVendor found -> not USB bridge device\n'
+07/12 05:11:13.368 DEBUG|             utils:0287| [stdout] 2020-07-11 22:11:13,012 DEBUG|     rc: 0
+07/12 05:11:14.142 DEBUG|          ssh_host:0324| Running (ssh) 'true' from 'run|_get_host_and_setup|wait_up|is_up|ssh_ping|run_very_slowly'
+07/12 05:11:14.964 DEBUG|      abstract_ssh:0696| Host localhost:9222 is now up
+07/12 05:11:14.964 DEBUG|          autotest:0477| Autotest job starts on remote host: localhost
+07/12 05:11:14.964 DEBUG|          autotest:0131| Using existing host autodir: /usr/local/autotest
+07/12 05:11:14.973 DEBUG|          ssh_host:0324| Running (ssh) 'ls /usr/local/autotest/bin/autotest > /dev/null 2>&1' from 'parallel_simple|run_client|run|_do_run|verify_machine|run_very_slowly'
+07/12 05:11:16.222 DEBUG|          ssh_host:0324| Running (ssh) 'umount /usr/local/autotest/tmp' from 'parallel_simple|run_client|run|_do_run|verify_machine|run_very_slowly'
+07/12 05:11:17.485 DEBUG|             utils:0287| [stderr] umount: /usr/local/autotest/tmp: not mounted.
+07/12 05:11:17.516 DEBUG|          ssh_host:0324| Running (ssh) 'umount /usr/local/autotest/tests/download' from 'parallel_simple|run_client|run|_do_run|verify_machine|run_very_slowly'
+07/12 05:11:19.582 DEBUG|             utils:0287| [stderr] umount: /usr/local/autotest/tests/download: not mounted.
+07/12 05:11:19.701 DEBUG|          ssh_host:0324| Running (ssh) 'rm -f /usr/local/autotest/control.autoserv;rm -f /usr/local/autotest/control.autoserv.state;rm -f /usr/local/autotest/control;rm -f /usr/local/autotest/control.state' from 'parallel_simple|parallel_simple|run_client|run|_do_run|run_very_slowly'
+07/12 05:11:22.940 DEBUG|          autotest:0538| use_packaging is set to False, do not add any repository.
+07/12 05:11:22.942 DEBUG|          base_job:0357| Persistent state client.sysinfo now set to {'test': set([site_sysinfo.logdir('/home/chronos/user/log', ('**autoserv*', '**.journal')), site_sysinfo.logdir('/var/spool/crash', ('**autoserv*', '**.journal', '*.core')), sysinfo.logfile('/home/chronos/.Google/Google Talk Plugin/gtbplugin.log', 'gtbplugin.log', False), sysinfo.command('dmesg -c | gzip -9', 'dmesg.gz', False), site_sysinfo.logdir('/tmp/crash_reporter', ('**autoserv*', '**.journal')), sysinfo.command('df -mP', 'df', False)]), 'boot': set([sysinfo.command('hostname', 'hostname', False), sysinfo.logfile('/proc/interrupts', 'interrupts', False), sysinfo.logfile('/var/log/messages', 'messages', False), sysinfo.logfile('/proc/version', 'version', False), sysinfo.command('tree /mnt/stateful_partition/var_overlay/cache/dlc-images', 'dlc_preloaded_images', False), sysinfo.command('lspci -vvn', 'lspci_-vvn', False), sysinfo.command('crossystem', 'crossystem', False), sysinfo.logfile('/proc/modules', 'modules', False), sysinfo.command('uname -a', 'uname', True), sysinfo.command('ls -l /boot', 'boot_file_list', False), sysinfo.logfile('/proc/pci', 'pci', False), sysinfo.logfile('/proc/meminfo', 'meminfo', False), sysinfo.command('gcc --version', 'gcc_--version', False), sysinfo.command('dlcservice_util --list', 'dlcservice_util_--list', False), sysinfo.logfile('/proc/mounts', 'proc_mounts', False), sysinfo.logfile('/proc/slabinfo', 'slabinfo', False), sysinfo.logfile('/proc/cpuinfo', 'cpuinfo', False), sysinfo.command('ld --version', 'ld_--version', False), sysinfo.logfile('/proc/partitions', 'partitions', False), sysinfo.command('mount', 'mount', False), sysinfo.logfile('/proc/cmdline', 'cmdline', True), sysinfo.logfile('/var/log/bios_info.txt', 'bios_info.txt', False), sysinfo.command('tree /var/cache/dlc', 'dlc_images', False), sysinfo.logfile('/var/log/storage_info.txt', 'storage_info.txt', False), sysinfo.command('uptime', 'uptime', False), sysinfo.logfile('/sys/fs/pstore', 'pstore', False), sysinfo.command('losetup', 'losetup', False)])}
+07/12 05:11:22.942 DEBUG|      abstract_ssh:0539| send_file. source: /tmp/tmpHvUwNw, dest: /usr/local/autotest/control.autoserv.init.state, delete_dest: False,preserve_symlinks:False
+07/12 05:11:22.943 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:11:22.943 DEBUG|             utils:0219| Running 'rsync -L  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/tmp/tmpHvUwNw" "root@localhost:"/usr/local/autotest/control.autoserv.init.state""'
+07/12 05:11:24.091 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from 'parallel_simple|run_client|run|_do_run|send_file|run_very_slowly'
+07/12 05:11:25.624 DEBUG|      abstract_ssh:0539| send_file. source: /tmp/autoserv-hn7H8w/tmpWCtWaO, dest: /usr/local/autotest/control.autoserv, delete_dest: False,preserve_symlinks:False
+07/12 05:11:25.625 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:11:25.625 DEBUG|             utils:0219| Running 'rsync -L  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/tmp/autoserv-hn7H8w/tmpWCtWaO" "root@localhost:"/usr/local/autotest/control.autoserv""'
+07/12 05:11:26.598 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from 'parallel_simple|run_client|run|_do_run|send_file|run_very_slowly'
+07/12 05:11:28.557 DEBUG|          ssh_host:0324| Running (ssh) 'if [ -f '/proc/sys/kernel/random/boot_id' ]; then cat '/proc/sys/kernel/random/boot_id'; else echo 'no boot_id available'; fi' from 'run_client|run|_do_run|execute_control|get_boot_id|run_very_slowly'
+07/12 05:11:29.848 DEBUG|             utils:0287| [stdout] 6c94d87d-8d93-4812-a5b7-9d86400fbd0f
+07/12 05:11:29.931 INFO |          autotest:1038| Executing /usr/local/autotest/bin/autotest /usr/local/autotest/control phase 0
+07/12 05:11:29.939 DEBUG|          ssh_host:0324| Running (ssh) 'mkdir -p /tmp' from '_do_run|execute_control|execute_section|_execute_daemon|get_tmp_dir|run_very_slowly'
+07/12 05:11:31.125 DEBUG|          ssh_host:0324| Running (ssh) 'mktemp -d /usr/local/tmp/autoserv-XXXXXX' from '_do_run|execute_control|execute_section|_execute_daemon|get_tmp_dir|run_very_slowly'
+07/12 05:11:32.444 DEBUG|             utils:0287| [stdout] /usr/local/tmp/autoserv-fmlfZA
+07/12 05:11:32.536 DEBUG|      abstract_ssh:0539| send_file. source: /tmp/tmphroEV0, dest: /usr/local/autotest/global_config.ini, delete_dest: False,preserve_symlinks:False
+07/12 05:11:32.536 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:11:32.536 DEBUG|             utils:0219| Running 'rsync -L  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/tmp/tmphroEV0" "root@localhost:"/usr/local/autotest/global_config.ini""'
+07/12 05:11:33.968 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from 'execute_control|execute_section|_execute_daemon|copy_client_config_file|send_file|run_very_slowly'
+07/12 05:11:35.821 DEBUG|          ssh_host:0324| Running (ssh) 'nohup /usr/local/autotest/bin/autotestd /usr/local/tmp/autoserv-fmlfZA -H autoserv --verbose --hostname=localhost --user=autotest_system /usr/local/autotest/control.autoserv >/dev/null 2>/dev/null &' from 'run|_do_run|execute_control|execute_section|_execute_daemon|run_very_slowly'
+07/12 05:11:36.799 DEBUG|          ssh_host:0324| Running (ssh) '/usr/local/autotest/bin/autotestd_monitor /usr/local/tmp/autoserv-fmlfZA 0 0' from 'run|_do_run|execute_control|execute_section|_execute_daemon|run_very_slowly'
+07/12 05:11:43.721 DEBUG|          autotest:1346| Entered autotestd_monitor.
+07/12 05:11:43.721 INFO |          autotest:1405| Entered autotestd_monitor.
+07/12 05:11:43.721 DEBUG|          autotest:1346| Finished launching tail subprocesses.
+07/12 05:11:43.721 INFO |          autotest:1405| Finished launching tail subprocesses.
+07/12 05:11:43.721 DEBUG|          autotest:1346| Finished waiting on autotestd to start.
+07/12 05:11:43.722 INFO |          autotest:1405| Finished waiting on autotestd to start.
+07/12 05:12:30.563 DEBUG|          autotest:1346| AUTOTEST_STATUS::START	----	----	timestamp=1594530749	localtime=Jul 11 22:12:29	
+07/12 05:12:30.564 INFO |        server_job:0222| START	----	----	timestamp=1594530749	localtime=Jul 12 05:12:29	
+07/12 05:12:35.449 DEBUG|          autotest:1346| AUTOTEST_STATUS::	START	login_LoginSuccess	login_LoginSuccess	timestamp=1594530754	localtime=Jul 11 22:12:34	
+07/12 05:12:35.450 INFO |        server_job:0222| 	START	login_LoginSuccess	login_LoginSuccess	timestamp=1594530754	localtime=Jul 12 05:12:34	
+07/12 05:12:41.301 DEBUG|          autotest:1346| AUTOTEST_FETCH_PACKAGE:test-login_LoginSuccess.tar.bz2:/usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2:/usr/local/autotest/tmp/_autotmp_ZgNDZnharness-fifo/autoserv.fifo
+07/12 05:12:41.302 INFO |          autotest:1443| Bundling /build/amd64-generic/usr/local/build/autotest/client/site_tests/login_LoginSuccess into test-login_LoginSuccess.tar.bz2
+07/12 05:12:41.303 DEBUG|             utils:0219| Running 'tar -cf /tmp/_autotmp_xdhvauautoserv-packager/test-login_LoginSuccess.tar.bz2.tmp -C /build/amd64-generic/usr/local/build/autotest/client/site_tests/login_LoginSuccess --use-compress-prog=pbzip2  .'
+07/12 05:12:41.320 DEBUG|      abstract_ssh:0539| send_file. source: /tmp/_autotmp_xdhvauautoserv-packager/test-login_LoginSuccess.tar.bz2, dest: /usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2, delete_dest: False,preserve_symlinks:False
+07/12 05:12:41.320 DEBUG|      abstract_ssh:0556| Using Rsync.
+07/12 05:12:41.320 DEBUG|             utils:0219| Running 'rsync -L  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  "/tmp/_autotmp_xdhvauautoserv-packager/test-login_LoginSuccess.tar.bz2" "root@localhost:"/usr/local/autotest/packages/test-login_LoginSuccess.tar.bz2""'
+07/12 05:12:42.648 DEBUG|          ssh_host:0324| Running (ssh) 'sync' from 'process_output|write|_process_line|_send_tarball|send_file|run_very_slowly'
+07/12 05:12:45.381 DEBUG|          ssh_host:0324| Running (ssh) 'echo B > /usr/local/autotest/tmp/_autotmp_ZgNDZnharness-fifo/autoserv.fifo' from 'join_bg_jobs|_wait_for_commands|process_output|write|_process_line|run_very_slowly'
+07/12 05:12:50.448 DEBUG|          autotest:1346| AUTOTEST_FETCH_PACKAGE:packages.checksum:/usr/local/autotest/packages.checksum:/usr/local/autotest/tmp/_autotmp_onvAJqharness-fifo/autoserv.fifo
+07/12 05:12:50.473 DEBUG|          ssh_host:0324| Running (ssh) 'echo B > /usr/local/autotest/tmp/_autotmp_onvAJqharness-fifo/autoserv.fifo' from 'join_bg_jobs|_wait_for_commands|process_output|write|_process_line|run_very_slowly'
+07/12 05:25:47.691 DEBUG|          autotest:1346| AUTOTEST_STATUS::		GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531546	localtime=Jul 11 22:25:46	completed successfully
+07/12 05:25:47.691 INFO |        server_job:0222| 		GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531546	localtime=Jul 12 05:25:46	completed successfully
+07/12 05:25:48.378 DEBUG|          autotest:1346| AUTOTEST_STATUS::	END GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531547	localtime=Jul 11 22:25:47	
+07/12 05:25:48.378 INFO |        server_job:0222| 	END GOOD	login_LoginSuccess	login_LoginSuccess	timestamp=1594531547	localtime=Jul 12 05:25:47	
+07/12 05:25:49.760 DEBUG|          autotest:1346| AUTOTEST_TEST_COMPLETE:/usr/local/autotest/tmp/_autotmp_7bxSudharness-fifo/autoserv.fifo
+07/12 05:25:49.768 DEBUG|          ssh_host:0324| Running (ssh) 'true' from '_process_line|collect_client_job_results|wait_up|is_up|ssh_ping|run_very_slowly'
+07/12 05:25:50.347 DEBUG|      abstract_ssh:0696| Host localhost:9222 is now up
+07/12 05:25:50.355 DEBUG|          ssh_host:0324| Running (ssh) 'test -f /usr/local/autotest/result_tools/utils.py' from 'write|_process_line|collect_client_job_results|run_on_client|_deploy_result_tools|run_very_slowly'
+07/12 05:25:50.738 DEBUG|            runner:0061| result tools are already deployed to localhost.
+07/12 05:25:50.739 DEBUG|            runner:0101| Getting directory summary for /usr/local/autotest/results/default
+07/12 05:25:50.746 DEBUG|          ssh_host:0324| Running (ssh) '/usr/local/autotest/result_tools/utils.py -p /usr/local/autotest/results/default ' from 'process_output|write|_process_line|collect_client_job_results|run_on_client|run_very_slowly'
+07/12 05:26:02.003 DEBUG|             utils:0287| [stdout] 2020-07-11 22:26:01,572 Running result_tools/utils on path: /usr/local/autotest/results/default
+07/12 05:26:04.896 DEBUG|             utils:0287| [stdout] 2020-07-11 22:26:04,550 Directory summary of /usr/local/autotest/results/default is saved to file /usr/local/autotest/results/default/dir_summary_1594531564.json.
+07/12 05:26:05.378 DEBUG|      abstract_ssh:0432| get_file. source: /usr/local/autotest/results/default/, dest: /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess, delete_dest: False,preserve_perm: True, preserve_symlinks:True
+07/12 05:26:05.379 DEBUG|      abstract_ssh:0444| Using Rsync.
+07/12 05:26:05.379 DEBUG|             utils:0219| Running 'rsync -l  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  root@localhost:"/usr/local/autotest/results/default/" "/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess"'
+07/12 05:26:17.678 DEBUG|          ssh_host:0324| Running (ssh) 'echo A > /usr/local/autotest/tmp/_autotmp_7bxSudharness-fifo/autoserv.fifo' from 'join_bg_jobs|_wait_for_commands|process_output|write|_process_line|run_very_slowly'
+07/12 05:26:21.951 DEBUG|          autotest:1346| AUTOTEST_STATUS::END GOOD	----	----	timestamp=1594531581	localtime=Jul 11 22:26:21	
+07/12 05:26:21.952 INFO |        server_job:0222| END GOOD	----	----	timestamp=1594531581	localtime=Jul 12 05:26:21	
+07/12 05:26:28.296 DEBUG|          autotest:1346| Got lock of exit_code_file.
+07/12 05:26:28.296 INFO |          autotest:1405| Got lock of exit_code_file.
+07/12 05:26:28.382 DEBUG|          autotest:1346| Released lock of exit_code_file and closed it.
+07/12 05:26:28.382 INFO |          autotest:1405| Released lock of exit_code_file and closed it.
+07/12 05:26:28.401 DEBUG|          autotest:1346| Killing child processes.
+07/12 05:26:28.402 INFO |          autotest:1405| Killing child processes.
+07/12 05:26:29.126 DEBUG|          autotest:1020| Result exit status is 0.
+07/12 05:26:29.126 INFO |          autotest:1124| Client complete
+07/12 05:26:29.126 DEBUG|          autotest:1173| Autotest job finishes running. Below is the post-processing operations.
+07/12 05:26:29.134 DEBUG|          ssh_host:0324| Running (ssh) 'true' from 'execute_control|collect_client_job_results|wait_up|is_up|ssh_ping|run_very_slowly'
+07/12 05:26:30.143 DEBUG|      abstract_ssh:0696| Host localhost:9222 is now up
+07/12 05:26:30.150 DEBUG|          ssh_host:0324| Running (ssh) 'test -f /usr/local/autotest/result_tools/utils.py' from '_do_run|execute_control|collect_client_job_results|run_on_client|_deploy_result_tools|run_very_slowly'
+07/12 05:26:31.177 DEBUG|            runner:0061| result tools are already deployed to localhost.
+07/12 05:26:31.177 DEBUG|            runner:0101| Getting directory summary for /usr/local/autotest/results/default
+07/12 05:26:31.184 DEBUG|          ssh_host:0324| Running (ssh) '/usr/local/autotest/result_tools/utils.py -p /usr/local/autotest/results/default ' from 'run|_do_run|execute_control|collect_client_job_results|run_on_client|run_very_slowly'
+07/12 05:26:39.125 DEBUG|             utils:0287| [stdout] 2020-07-11 22:26:38,771 Running result_tools/utils on path: /usr/local/autotest/results/default
+07/12 05:26:42.535 DEBUG|             utils:0287| [stdout] 2020-07-11 22:26:42,200 Directory summary of /usr/local/autotest/results/default is saved to file /usr/local/autotest/results/default/dir_summary_1594531602.json.
+07/12 05:26:42.954 DEBUG|      abstract_ssh:0432| get_file. source: /usr/local/autotest/results/default/, dest: /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess, delete_dest: False,preserve_perm: True, preserve_symlinks:True
+07/12 05:26:42.954 DEBUG|      abstract_ssh:0444| Using Rsync.
+07/12 05:26:42.954 DEBUG|             utils:0219| Running 'rsync -l  --timeout=1800 --rsh='/usr/bin/ssh -a -x -o ControlPath=/tmp/ssh-master_sgouda/_autotmp_j6PbZl/socket -o Protocol=2 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o BatchMode=yes -o ConnectTimeout=30 -o ServerAliveInterval=900 -o ServerAliveCountMax=3 -o ConnectionAttempts=4 -l root -p 9222' -az --no-o --no-g  root@localhost:"/usr/local/autotest/results/default/" "/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess"'
+07/12 05:26:44.748 DEBUG|          base_job:0250| Value of client.sysinfo is unchanged, skipping import
+07/12 05:26:44.749 DEBUG|          base_job:0253| Importing client.harness from state file /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/control.autoserv.state
+07/12 05:26:44.749 DEBUG|          base_job:0253| Importing client.steps from state file /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/control.autoserv.state
+07/12 05:26:44.749 DEBUG|          base_job:0253| Importing client._record_indent from state file /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/control.autoserv.state
+07/12 05:26:44.749 DEBUG|          base_job:0253| Importing public.client_success from state file /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/control.autoserv.state
+07/12 05:26:44.749 DEBUG|          base_job:0250| Value of global_properties.max_result_size_KB is unchanged, skipping import
+07/12 05:26:44.749 DEBUG|          base_job:0250| Value of global_properties.tag is unchanged, skipping import
+07/12 05:26:44.749 DEBUG|          base_job:0250| Value of global_properties.fast is unchanged, skipping import
+07/12 05:26:44.750 DEBUG|          base_job:0399| Persistent state client.* deleted
+07/12 05:26:44.751 DEBUG|          autotest:1187| Autotest job finishes.
+07/12 05:26:44.751 INFO |        server_job:0838| Finished processing control file
+07/12 05:26:44.751 INFO |        server_job:0899| No client dir to retrieve.
+07/12 05:26:44.752 DEBUG|         host_info:0337| Refreshing HostInfo using store FileStore[/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/host_info_store/localhost:9222.store]
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: {'drone': 'chromebuild', 'user': 'autotest_system', 'job_started': 1594530616, 'hostname': 'localhost:9222', 'status_version': 1, 'experimental': 'False', 'label': 'ad_hoc_build/ad_hoc_suite/login_LoginSuccess'}
+07/12 05:26:44.752 DEBUG|         host_info:0338| Old host_info: None
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: MACHINE NAME: localhost:9222
+07/12 05:26:44.752 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.752 DEBUG|         host_info:0346| New host_info: HostInfo[Labels: [u'cros-version:ad_hoc_build', u'board:amd64-generic'], Attributes: {}, StableVersions: {}]
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: MACHINE GROUP: amd64-generic
+07/12 05:26:44.753 ERROR|   logging_manager:0633| tko parser: parsing partial test ---- SERVER_JOB
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test None CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.754 ERROR|   logging_manager:0633| CLIENT_JOB.0
+07/12 05:26:44.754 ERROR|   logging_manager:0633| 
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: parsing partial test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.754 ERROR|   logging_manager:0633| tko parser: RUNNING: RUNNING
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.755 DEBUG|         host_info:0337| Refreshing HostInfo using store FileStore[/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/host_info_store/localhost:9222.store]
+07/12 05:26:44.755 DEBUG|         host_info:0338| Old host_info: None
+07/12 05:26:44.755 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| 
+07/12 05:26:44.755 DEBUG|         host_info:0346| New host_info: HostInfo[Labels: [u'cros-version:ad_hoc_build', u'board:amd64-generic'], Attributes: {}, StableVersions: {}]
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: update RUNNING reason: completed successfully
+07/12 05:26:44.755 DEBUG|         host_info:0337| Refreshing HostInfo using store FileStore[/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/host_info_store/localhost:9222.store]
+07/12 05:26:44.755 DEBUG|         host_info:0338| Old host_info: None
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: parsing test login_LoginSuccess login_LoginSuccess
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.755 DEBUG|         host_info:0346| New host_info: HostInfo[Labels: [u'cros-version:ad_hoc_build', u'board:amd64-generic'], Attributes: {}, StableVersions: {}]
+07/12 05:26:44.755 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.755 DEBUG|         host_info:0337| Refreshing HostInfo using store FileStore[/mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/host_info_store/localhost:9222.store]
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: login_LoginSuccess
+07/12 05:26:44.756 DEBUG|         host_info:0338| Old host_info: None
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Testname: login_LoginSuccess
+07/12 05:26:44.756 DEBUG|         host_info:0346| New host_info: HostInfo[Labels: [u'cros-version:ad_hoc_build', u'board:amd64-generic'], Attributes: {}, StableVersions: {}]
+07/12 05:26:44.756 ERROR|   logging_manager:0633| completed successfully
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: parsing test None CLIENT_JOB.0
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.756 ERROR|   logging_manager:0633| tko parser: ADD: GOOD
+07/12 05:26:44.756 ERROR|   logging_manager:0633| Subdir: None
+07/12 05:26:44.757 ERROR|   logging_manager:0633| Testname: CLIENT_JOB.0
+07/12 05:26:44.757 ERROR|   logging_manager:0633| 
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: parsing test ---- SERVER_JOB
+07/12 05:26:44.757 ERROR|   logging_manager:0633| tko parser: Reading keyvals from hostinfo.
+07/12 05:26:44.771 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:26:44.780 DEBUG|          ssh_host:0324| Running (ssh) 'test :' from 'parallel_simple|crashdumps|create_target_machine|create_host|_verify_connectivity|run_very_slowly'
+07/12 05:26:45.857 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:26:45.857 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:26:45.866 DEBUG|          ssh_host:0324| Running (ssh) 'grep -q CHROMEOS /etc/lsb-release && ! grep -q moblab /etc/lsb-release && ! grep -q labstation /etc/lsb-release' from 'crashdumps|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:26:48.051 DEBUG|          ssh_host:0324| Running (ssh) 'grep CHROMEOS_RELEASE_BOARD /etc/lsb-release' from 'crashdumps|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:26:49.521 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 05:26:49.585 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:26:49.586 DEBUG|        servo_host:1414| No servo_args provided, and failed to find overrides.
+07/12 05:26:49.586 DEBUG|         cros_host:1109| Servo is not initialized to get servo_type.
+07/12 05:26:49.600 DEBUG|             utils:2015| Checking if host localhost-chameleon.cros.corp.google.com is in lab zone.
+07/12 05:26:49.657 DEBUG|             utils:2015| Checking if host localhost.cros.corp.google.com is in lab zone.
+07/12 05:26:49.699 DEBUG|         cros_host:0400| Bluetooth peer hosts are  []
+07/12 05:26:49.699 DEBUG|         cros_host:0410| After initialize_btpeer btpeer_list [] btpeer_host_list is [] and btpeer is None
+07/12 05:26:49.708 DEBUG|          ssh_host:0324| Running (ssh) 'python -c 'import json, glob, sys;json.dump(glob.glob(sys.argv[1]), sys.stdout)'' from 'parallel_simple|crashdumps|report_crashdumps|_find_orphaned_crashdumps|list_files_glob|run_very_slowly'
+07/12 05:27:02.065 DEBUG|             utils:0219| Running 'ping -c 3 localhost'
+07/12 05:27:04.140 DEBUG|          ssh_host:0324| Running (ssh) 'python -c 'import json, glob, sys;json.dump(glob.glob(sys.argv[1]), sys.stdout)'' from 'parallel_simple|crashdumps|fetch_orphaned_crashdumps|_find_orphaned_crashdumps|list_files_glob|run_very_slowly'
+07/12 05:27:10.841 INFO | site_crashcollect:0221| There are no orphaned crashes; deleting /mnt/host/source/src/scripts/results/results-3-login_LoginSuccess/crashinfo.localhost
+07/12 05:27:10.857 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:27:10.866 DEBUG|          ssh_host:0324| Running (ssh) 'test :' from 'parallel_simple|get_network_stats|create_target_machine|create_host|_verify_connectivity|run_very_slowly'
+07/12 05:27:11.626 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:27:11.626 INFO |           factory:0124| Attempting to autodetect if host is of type CrosHost
+07/12 05:27:11.635 DEBUG|          ssh_host:0324| Running (ssh) 'grep -q CHROMEOS /etc/lsb-release && ! grep -q moblab /etc/lsb-release && ! grep -q labstation /etc/lsb-release' from 'get_network_stats|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:27:12.987 DEBUG|          ssh_host:0324| Running (ssh) 'grep CHROMEOS_RELEASE_BOARD /etc/lsb-release' from 'get_network_stats|create_target_machine|create_host|_detect_host|check_host|run_very_slowly'
+07/12 05:27:13.952 DEBUG|             utils:0287| [stdout] CHROMEOS_RELEASE_BOARD=amd64-generic
+07/12 05:27:13.999 DEBUG|     ssh_multiplex:0154| Get master ssh connection for root@localhost:9222
+07/12 05:27:13.999 DEBUG|        servo_host:1414| No servo_args provided, and failed to find overrides.
+07/12 05:27:14.000 DEBUG|         cros_host:1109| Servo is not initialized to get servo_type.
+07/12 05:27:14.014 DEBUG|             utils:2015| Checking if host localhost-chameleon.cros.corp.google.com is in lab zone.
+07/12 05:27:14.034 DEBUG|             utils:2015| Checking if host localhost.cros.corp.google.com is in lab zone.
+07/12 05:27:14.035 DEBUG|         cros_host:0400| Bluetooth peer hosts are  []
+07/12 05:27:14.035 DEBUG|         cros_host:0410| After initialize_btpeer btpeer_list [] btpeer_host_list is [] and btpeer is None
+07/12 05:27:14.035 DEBUG|             utils:0219| Running 'ping localhost -c1'
+07/12 05:27:14.048 DEBUG|             utils:1993| [rc=0] 1 packets transmitted, 1 received, 0% packet loss, time 0ms; rtt min/avg/max/mdev = 0.011/0.011/0.011/0.000 ms
+07/12 05:27:14.059 DEBUG|          ssh_host:0324| Running (ssh) 'route; echo SEPARATOR; cat /proc/net/dev' from '_execute_code|<module>|parallel_simple|parallel_simple|get_network_stats|run_very_slowly'
+07/12 05:27:15.029 DEBUG|             utils:0287| [stdout] Kernel IP routing table
+07/12 05:27:15.029 DEBUG|             utils:0287| [stdout] Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+07/12 05:27:15.029 DEBUG|             utils:0287| [stdout] 10.0.2.0        0.0.0.0         255.255.255.224 U     0      0        0 eth0
+07/12 05:27:15.073 DEBUG|             utils:0287| [stdout] SEPARATOR
+07/12 05:27:15.301 DEBUG|             utils:0287| [stdout] Inter-|   Receive                                                |  Transmit
+07/12 05:27:15.301 DEBUG|             utils:0287| [stdout]  face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+07/12 05:27:15.301 DEBUG|             utils:0287| [stdout]   eth0: 37731360   33644    0    0    0     0          0         0  5380190   13778    0    0    0     0       0          0
+07/12 05:27:15.301 DEBUG|             utils:0287| [stdout]     lo: 2159262   38434    0    0    0     0          0         0  2159262   38434    0    0    0     0       0          0
+07/12 05:27:15.340 INFO | get_network_stats:0040| get_network_stats: no default interface
+07/12 05:27:15.342 DEBUG|          ssh_host:0324| Running (ssh) 'rm -rf "/usr/local/tmp/autoserv-fmlfZA"' from 'run_autoserv|close|close|close|close|run_very_slowly'
+07/12 05:27:16.594 DEBUG|     ssh_multiplex:0123| Nuking ssh master_job
+07/12 05:27:17.595 DEBUG|     ssh_multiplex:0128| Cleaning ssh master_tempdir
+07/12 05:27:17.672 DEBUG|   logging_manager:0634| Logging subprocess finished
+07/12 05:27:17.673 DEBUG|   logging_manager:0634| Logging subprocess finished
